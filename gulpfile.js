@@ -6,6 +6,7 @@ const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const del = require('del');
 const autoprefixer = require('gulp-autoprefixer');
+const merge = require('merge-stream');
 
 gulp.task('clean', function () {
     return del('assets');
