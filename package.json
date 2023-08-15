@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "gulp-scss-lint": "^1.0.0",
+    "merge-stream": "^2.0.0",
     "sass-convert": "^0.5.2",
     "slick-carousel": "^1.8.1"
   }
