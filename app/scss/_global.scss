@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: 'Raleway', sans-serif;
+  background-color: $white;
+  color: $black;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {}
+
+img {
+  display: block;
+  height: auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 15px;
+  margin: auto;
+  width: 100%;
+  position: relative;
+}

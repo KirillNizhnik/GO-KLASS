@@ -1,0 +1,31 @@
+{
+  "name": "Go-klas",
+  "version": "1.0.0",
+  "description": "Go-klas",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anstasia",
+  "license": "ISC",
+  "devDependencies": {
+    "animate.css": "^4.1.1",
+    "browser-sync": "^2.29.3",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "jquery": "^3.6.1",
+    "normalize.css": "^8.0.1",
+    "sass": "^1.52.3",
+    "wow.js": "^1.2.2"
+  },
+  "dependencies": {
+    "gulp-scss-lint": "^1.0.0",
+    "sass-convert": "^0.5.2",
+    "slick-carousel": "^1.8.1"
+  }
+}
