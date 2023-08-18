@@ -1,0 +1,96 @@
+
+.hero {
+  margin: 40px auto 80px auto;
+  background-image: url("../images/backgraund.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+  &-inner {
+    display: block;
+    text-align: center;
+
+    &__caption {
+      font-size: 24px;
+      line-height: 40px;
+      margin-bottom: 16px;
+    }
+
+    &__title {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 44px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+
+    &__btn {
+      background-color: $violet;
+      border-radius: 4px;
+      color: $white;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 32px;
+    }
+
+    &__list {
+      display: flex;
+      gap: 5px;
+      align-items: flex-end;
+      margin-bottom: 24px;
+      justify-content: center;
+
+      &-item-img {
+        width: 62px;
+        border-radius: 4px;
+      }
+
+      &-item-img-3 {
+        width: 99px;
+      }
+    }
+
+    &__list-benefits {
+      display: flex;
+      gap: 27px;
+      margin-bottom: 44px;
+      justify-content: center;
+
+      &-item > span {
+        color: $grey;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 4px;
+      }
+
+      &-item-num {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 44px;
+        text-transform: uppercase;
+      }
+
+      .benefits-item-num-1 {
+        color: $violet;
+      }
+
+      .benefits-item-num-2 {
+        color: $green;
+      }
+    }
+
+    &__descr {
+      color: $black;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22.5px;
+    }
+  }
+}
