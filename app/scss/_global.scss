@@ -56,12 +56,13 @@ a {
   text-decoration: none;
 }
 
-button {
+.button{
   cursor: pointer;
+  border: none;
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 16px;
   margin: auto;
   width: 100%;
   position: relative;
