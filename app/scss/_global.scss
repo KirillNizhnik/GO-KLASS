@@ -13,7 +13,10 @@
   padding: 0;
 }
 
-::selection {}
+::selection {
+  background-color: $white;
+  color: $green;
+}
 
 img {
   display: block;
@@ -60,6 +63,7 @@ a {
   cursor: pointer;
   border: none;
 }
+
 
 .container {
   padding: 0 16px;
