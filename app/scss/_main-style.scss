@@ -133,10 +133,12 @@
       line-height: 24px;
       margin: 0 0 20px 0;
     }
+
     .about-us-inner-icon {
       fill: $grey-light;
       transition: transform 450ms cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     &__btn {
       margin: auto;
       color: $black;
@@ -158,10 +160,48 @@
       fill: $violet;
 
     }
-    &__btn:hover{
+
+    &__btn:hover {
       color: $violet;
       gap: 15px;
       width: 179px;
     }
   }
+}
+
+.directions-work {
+  margin: 0 0 78px 0;
+
+  &-inner {
+    &__title {
+      font-size: 30px;
+      font-weight: 700;
+      text-align: center;
+      line-height: 34px;
+      margin: 0 0 32px 0;
+    }
+
+    &__list-item {
+      margin: 0 0 16px 0;
+
+      &-title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 24px;
+      }
+
+      &-descr {
+        margin: 0 0 0 20px;
+      }
+    }
+
+    &-title {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      margin: 8px 0;
+    }
+
+  }
+
 }
