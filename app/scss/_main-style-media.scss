@@ -18,7 +18,28 @@
       margin-bottom: 32px;
     }
 
-    &-inner__btn.button {
+    &-inner__list {
+      height: 210px;
+      gap: 16px;
+
+      &-item-2 {
+        margin: 0 0 32px 0;
+      }
+
+      &-item-3 {
+        margin: 0 0 32px 0;
+      }
+
+      &-item-4 {
+        margin: 0 0 32px 0;
+      }
+
+      &-item-5 {
+        margin: 0 0 32px 0;
+      }
+    }
+
+    &-inner__btn {
       width: 344px;
     }
 
@@ -58,7 +79,28 @@
       line-height: 72px;
     }
 
-    &-inner__btn.button {
+    &-inner__list {
+      height: 350px;
+      gap: 24px;
+
+      &-item-2 {
+        margin: 0 0 61px 0;
+      }
+
+      &-item-3 {
+        margin: 0 0 61px 0;
+      }
+
+      &-item-4 {
+        margin: 0 0 61px 0;
+      }
+
+      &-item-5 {
+        margin: 0 0 61px 0;
+      }
+    }
+
+    &-inner__btn {
       padding: 12px 24px;
       width: 242px;
     }
@@ -72,7 +114,7 @@
     }
 
     &-inner__list {
-      margin: -70px 0 0 0;
+      margin: -50px 0 0 0;
     }
 
     &-inner__list-benefits-item > span {
