@@ -206,7 +206,6 @@
 
 }
 
-
 .news {
   margin: 0 0 80px 0;
 
@@ -292,4 +291,39 @@
     }
   }
 
+}
+
+.our-partners {
+  margin: 0 0 80px 0;
+
+  &__inner {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+
+    &-title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 34px;
+      margin: 0 0 24px 0;
+    }
+
+    &-list {
+      padding: 33px 0;
+      display: flex;
+      align-items: center;
+      gap: 34px;
+      animation: scrolling 20s linear infinite;
+    }
+  }
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
