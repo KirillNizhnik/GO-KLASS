@@ -62,6 +62,24 @@
       margin: auto;
     }
   }
+
+  .about-us {
+    margin: 0 0 72px 0;
+    &-inner {
+      overflow: auto;
+      &__title {
+        text-align: left;
+        margin: 0 0 32px 0;
+      }
+      &__img {
+        object-fit: cover;
+        width: 344px;
+        height: 216px;
+        float: right;
+        margin: 0 0 24px 24px;
+      }
+    }
+  }
 }
 
 
@@ -145,6 +163,28 @@
       width: 791px;
       font-size: 24px;
       line-height: 28px;
+    }
+  }
+
+  .about-us {
+    margin: 0 0 112px 0;
+    &-inner {
+      &__title {
+        font-size: 40px;
+        margin: 0 0 36px 0;
+      }
+      &__img {
+        width: 558px;
+        height: 348px;
+        margin: 0 0 0 50px;
+      }
+      &__descr {
+        font-size: 18px;
+        margin: 0 0 24px 0;
+      }
+      &__btn {
+        margin: 0;
+      }
     }
   }
 }
