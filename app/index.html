@@ -295,7 +295,7 @@
                             <form class="contacts-form">
                                 <div class="contacts-form-wrap">
                                     <label class="contacts-form-label" for="contacts-name">Ім’я</label>
-                                    <input type="name" name="name" placeholder="|Введіть Ім’я" required=""
+                                    <input type="text" name="name" placeholder="|Введіть Ім’я" required=""
                                            class="contacts-form-input" id="contacts-name">
                                 </div>
                                 <div class="contacts-form-wrap">
@@ -310,13 +310,12 @@
                                            class="contacts-form-input" id="contacts-email">
                                 </div>
                                 <div class="contacts-form-wrap">
-                                <textarea class="contacts-form-textarea" id="contacts-textarea"
-                                          placeholder="|Напишіть Ваше питання"
-                                          name="user-message"></textarea>
+                                    <label for="textarea"></label>
+                                <textarea id="textarea" class="contacts-form-textarea" placeholder="|Напишіть Ваше питання"></textarea>
                                 </div>
 
                                 <div class="contacts-form-privacy-policy">
-                                    <label name="user-policy" value="" class="contacts-form-privacy-policy-label">
+                                    <label class="contacts-form-privacy-policy-label">
                                         <input type="checkbox" name="user-policy" class="contacts-form-checkbox">
 
                                         <span class="contacts-form-privacy-policy-icon"></span></label>
