@@ -53,10 +53,12 @@
       &-item-img {
         width: 62px;
         border-radius: 4px;
+        object-fit: cover;
       }
 
       &-item-img-3 {
         width: 99px;
+        object-fit: cover;
       }
     }
 
@@ -124,6 +126,7 @@
       border-radius: 4px;
       width: 100%;
       margin: 0 0 24px 0;
+      object-fit: cover;
     }
 
     &__descr {
@@ -336,6 +339,7 @@
       height: 264px;
       border-radius: 4px;
       margin: 0 0 16px 0;
+
     }
 
     &-descr {
@@ -443,7 +447,6 @@
 
     &-label {
       font-size: 18px;
-      position: relative;
     }
 
     &-privacy-policy {
@@ -456,7 +459,9 @@
       align-items: center;
       gap: 16px;
       margin: 0 0 8px 0;
-
+      &-label {
+        position: relative;
+      }
     }
 
     &-btn {
@@ -473,7 +478,6 @@
       transition: background-color, color 450ms cubic-bezier(0.4, 0, 0.2, 1);
 
     }
-
     &-btn:hover {
       background-color: $white;
       color: $violet;
