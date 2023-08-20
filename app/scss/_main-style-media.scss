@@ -10,6 +10,7 @@
     width: 704px;
     padding: 0 32px;
   }
+
   .hero {
     margin: 40px auto 72px auto;
 
@@ -160,6 +161,35 @@
         margin: 0 0 32px 0;
       }
 
+    }
+  }
+
+  .about-partnerships {
+    margin: 0 0 72px 0;
+
+    &__inner {
+      text-align: center;
+
+      &-title {
+        text-align: left;
+        margin: 0 0 32px 0;
+      }
+
+      &-img {
+        width: 344px;
+        height: 264px;
+        margin: 0 0 4px 24px;
+        float: right;
+      }
+
+      &-descr {
+        margin: 0 0 52px 0;
+        text-align: left;
+      }
+
+      &-btn {
+        width: 344px;
+      }
     }
   }
 }
@@ -371,6 +401,48 @@
         margin: 0 0 36px 0;
       }
 
+    }
+  }
+
+  .about-partnerships {
+    margin: 0 0 112px 0;
+
+    &__inner {
+      text-align: center;
+
+      &-title {
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 0 40px 580px;
+      }
+
+      &-img {
+        width: 532px;
+        height: 410px;
+        margin: 0;
+        float: none;
+      }
+
+      &-wrap {
+        display: flex;
+        gap: 50px;
+        text-align: left;
+      }
+
+      &-descr {
+        margin: 0 0 52px 0;
+        text-align: left;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      &-btn {
+        padding: 12px 24px;
+        width: 204px;
+        margin: 0;
+        text-align: center;
+        font-size: 18px;
+      }
     }
   }
 }
