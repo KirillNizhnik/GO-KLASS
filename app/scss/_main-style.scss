@@ -25,6 +25,7 @@
 
     &__btn {
       background-color: $violet;
+      display: block;
       border-radius: 4px;
       color: $white;
       text-align: center;
@@ -33,7 +34,7 @@
       line-height: 24px;
       padding: 10px;
       width: 100%;
-      margin-bottom: 32px;
+      margin:0 auto 32px auto ;
       border: 1px solid $violet;
       transition: background-color, color 450ms cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -278,8 +279,8 @@
       border-radius: 4px;
       background-color: $violet;
       margin: auto;
-      width: 100%;
       display: block;
+      width: 100%;
       text-align: center;
       border: 1px solid $violet;
       transition: background-color, color 450ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -349,8 +350,10 @@
     }
 
     &-btn {
+      display: block;
       border-radius: 4px;
       width: 100%;
+      margin: auto;
       padding: 10px;
       background-color: $violet;
       font-size: 16px;
@@ -468,6 +471,7 @@
       border-radius: 4px;
       width: 100%;
       cursor: pointer;
+      display: block;
       padding: 10px;
       background-color: $violet;
       font-size: 16px;
