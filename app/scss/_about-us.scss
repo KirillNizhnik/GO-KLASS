@@ -1,4 +1,41 @@
-
 .about {
-    padding: 40px 0;
+  padding: 40px 0;
+  &-title {
+    color: aqua;
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.13;
+  }
+  &-list {
+    &__item {
+      &-img {
+        margin-bottom: 22px;
+        width: 343px;
+        height: 214px;
+      }
+      &-container {
+        &-text {
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.5;
+        }
+      }
+      &-first {
+        margin-bottom: 24px;
+      }
+    }
+    &__second {
+        
+    }
+  }
+}
+.about-list__second {
+    position: relative;
+    z-index: 1;
+}
+.about-list__item-bg {
+    position: absolute;
+    z-index: 0;
 }
