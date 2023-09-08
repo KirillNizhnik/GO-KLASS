@@ -1,7 +1,6 @@
 .about {
   padding: 40px 0;
   &-title {
-    color: aqua;
     text-align: center;
     margin-bottom: 22px;
     font-size: 30px;
@@ -9,7 +8,17 @@
     line-height: 1.13;
   }
   &-list {
+    &__second {
+      position: relative;
+      z-index: 1;
+    }
     &__item {
+      &-bg {
+        position: absolute;
+        z-index: -10;
+        right: 0;
+        top: -35px;
+      }
       &-img {
         margin-bottom: 22px;
         width: 343px;
@@ -27,15 +36,101 @@
       }
     }
     &__second {
-        
     }
   }
 }
-.about-list__second {
-    position: relative;
-    z-index: 1;
+.its-we {
+  padding: 40px 0 36px 0;
+  &-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.13;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  &-list {
+    padding-left: 20px;
+    &__item {
+      position: relative;
+      padding-top: 38px;
+      &-title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.33;
+        margin-bottom: 26px;
+      }
+      &-title::before {
+        content: "";
+        position: absolute;
+        width: 8px;
+        height: 56px;
+        background-color: #f1cc75;
+        left: -20px;
+        top: 24px;
+        border-radius: 20px;
+      }
+      &-text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+      }
+    }
+  }
 }
-.about-list__item-bg {
-    position: absolute;
-    z-index: 0;
+.team {
+  padding: 36px 0 78px 0;
+  &-title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.13;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 164px;
+      margin-bottom: 24px;
+      &-img {
+        margin-bottom: 12px;
+      }
+      &-title {
+        margin-bottom: 2px;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.28;
+      }
+      &-text {
+        text-align: center;
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1.33;
+        color: #6C6C64;
+      }
+    }
+  }
+
+  &-scroll {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   gap: 16px;
+   align-items: center;
+    &-arrow {
+     color: #CFCFCF;
+    }
+    &-page {
+      height: 1px;
+      width: 29px;
+      background-color: #CFCFCF;
+    }
+  }
+}
+.disabled {
+  display: none;
 }
