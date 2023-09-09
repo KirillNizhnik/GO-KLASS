@@ -21,24 +21,29 @@
         <div class="container">
           <h1 class="about-title">Хто ми</h1>
           <ul class="about-list">
-            <li class="about-list__item">
-              <picture class="about-list__item-picture about-list__item-picture-first">
+            <li class="about-list__item about-list__first">
+              <img class="about-list__item-bg-desc-l" src="./images/about-us-bg-left.svg" alt="" width="112" height="98">
+              <picture
+                class="about-list__item-picture about-list__item-picture-first"
+              >
                 <source
                   media="(max-width: 767px)"
-                  srcset="
-                  ./images/about-us-1.jpg"/>
+                  srcset="./images/about-us-1.jpg"
+                />
                 <source
-                  media="(min-width: 768px)"
-                  srcset="
-                  ./images/about-us-2-tablet.jpg"/>
+                media="(min-width: 768px) and (max-width: 1239px)"
+                  srcset="./images/about-us-2-tablet.jpg"
+                />
                 <img
-                class="about-list__item-picture-img"
-                  src="./images/about-us-2-tablet.jpg"
+                  class="about-list__item-picture-img about-list__item-picture-second"
+                  src="./images/about-us-1-desctop.jpg"
                   alt="Our work"
                 />
               </picture>
               <div class="about-list__item-container about-list__item-first">
-                <p class="about-list__item-container-text about-list__item-container-first">
+                <p
+                  class="about-list__item-container-text about-list__item-container-first"
+                >
                   ГО «Всеукраїнська організація "Клас"» - неприбуткова
                   організація, що створена 01 квітня 1998 року. Цільовою та
                   пріоритетною групою організації завжди були і залишаються діти
@@ -58,6 +63,7 @@
               </div>
             </li>
             <li class="about-list__item about-list__second">
+              <img class="about-list__item-bg-desc-r" src="./images/about-us-bg-right.svg" alt="" width="112" height="98">
               <img
                 class="about-list__item-bg"
                 src="./images/about-us-mobile-bg-right.svg"
@@ -65,22 +71,24 @@
                 width="84"
                 height="69"
               />
-              <picture class="about-list__item-picture about-list__item-picture-second">
+              <picture
+                class="about-list__item-picture about-list__item-picture-second"
+              >
                 <source
                   media="(max-width: 767px)"
-                  srcset="
-                  ./images/about-us-2.jpg"/>
+                  srcset="./images/about-us-2.jpg"
+                />
                 <source
-                  media="(min-width: 768px)"
-                  srcset="
-                  ./images/about-us-1-tablet.jpg"/>
+                  media="(min-width: 768px) and (max-width: 1239px)"
+                  srcset="./images/about-us-1-tablet.jpg"
+                />
                 <img
-                class="about-list__item-pictureimg"
-                  src="./images/about-us-1-tablet.jpg"
+                  class="about-list__item-picture-img"
+                  src="./images/about-us-2-desctop.jpg"
                   alt="Our work"
                 />
-              </picture>              
-              <div>
+              </picture>
+              <div class="about-list__item-container about-list__item-second">
                 <p class="about-list__item-container-text">
                   За час свого існування ГО «Всеукраїнська організація "Клас"»
                   відкрила декілька важливих для суспільства установ, зокрема,
@@ -166,7 +174,8 @@
                 class="team-list__item-img"
                 src="./images/about-us-team-1a.png"
                 alt="Сергій Зуєв"
-                width="164" height="164"
+                width="164"
+                height="164"
               />
               <h3 class="team-list__item-title">Сергій Зуєв</h3>
               <p class="team-list__item-text">
@@ -179,7 +188,8 @@
                 class="team-list__item-img"
                 src="./images/about-us-team-1b.png"
                 alt="Анастасія Шевченко"
-                width="164" height="164"
+                width="164"
+                height="164"
               />
               <h3 class="team-list__item-title">Анастасія Шевченко</h3>
               <p class="team-list__item-text">Бізнес-тренерка, методологиня</p>
@@ -189,7 +199,8 @@
                 class="team-list__item-img"
                 src="./images/about-us-team-2a.png"
                 alt="Ганна Матієвська"
-                width="164" height="164"
+                width="164"
+                height="164"
               />
               <h3 class="team-list__item-title">Ганна Матієвська</h3>
               <p class="team-list__item-text">
@@ -201,7 +212,8 @@
                 class="team-list__item-img"
                 src="./images/about-us-team-2b.png"
                 alt="Ксенія Романовська"
-                width="164" height="164"
+                width="164"
+                height="164"
               />
               <h3 class="team-list__item-title">Ксенія Романовська</h3>
               <p class="team-list__item-text">
@@ -213,7 +225,8 @@
                 class="team-list__item-img"
                 src="./images/about-us-team-3a.png"
                 alt="Таїсія Коцюбайло"
-                width="164" height="164"
+                width="164"
+                height="164"
               />
               <h3 class="team-list__item-title">Таїсія Коцюбайло</h3>
               <p class="team-list__item-text">Психологиня</p>
@@ -223,7 +236,8 @@
                 class="team-list__item-img"
                 src="./images/about-us-team-3b.png"
                 alt="Станіслав Чернецький"
-                width="164" height="164"
+                width="164"
+                height="164"
               />
               <h3 class="team-list__item-title">Станіслав Чернецький</h3>
               <p class="team-list__item-text">Волонтер, психолог</p>
@@ -233,7 +247,8 @@
                 class="team-list__item-img"
                 src="./images/about-us-team-4a.png"
                 alt="Андрій Богданов"
-                width="164" height="164"
+                width="164"
+                height="164"
               />
               <h3 class="team-list__item-title">Андрій Богданов</h3>
               <p class="team-list__item-text">Методолог, коуч</p>
@@ -244,7 +259,8 @@
                 class="team-list__item-img"
                 src="./images/about-us-team-4b.png"
                 alt="Валентина Городецька"
-                width="164" height="164"
+                width="164"
+                height="164"
               />
               <h3 class="team-list__item-title">Валентина Городецька</h3>
               <p class="team-list__item-text">Менеджерка молодіжних проєктів</p>
@@ -253,14 +269,18 @@
           <div class="team-scroll">
             <svg class="team-scroll-arrow" width="24px" height="24px">
               <use href="./images/icons.svg#icon-about-us-arrow-left"></use>
-          </svg>
+            </svg>
             <div class="team-scroll-page active-page"></div>
             <div class="team-scroll-page"></div>
             <div class="team-scroll-page"></div>
             <div class="team-scroll-page"></div>
-            <svg class="team-scroll-arrow active-arrow" width="24px" height="24px">
+            <svg
+              class="team-scroll-arrow active-arrow"
+              width="24px"
+              height="24px"
+            >
               <use href="images/icons.svg#icon-about-us-arrow-right"></use>
-          </svg>            
+            </svg>
           </div>
         </div>
       </section>

@@ -15,6 +15,12 @@
     &__item {
       display: flex;
       flex-wrap: wrap;
+      &-bg-desc-l {
+        display: none;
+      }
+      &-bg-desc-r {
+        display: none;
+      }
       &-bg {
         position: absolute;
         z-index: -10;
@@ -66,7 +72,7 @@
         position: absolute;
         width: 8px;
         height: 56px;
-        background-color: #f1cc75;
+        background-color: $yellow;
         left: -20px;
         top: 24px;
         border-radius: 20px;
@@ -125,12 +131,12 @@
     gap: 16px;
     align-items: center;
     &-arrow {
-      stroke: #cfcfcf;
+      stroke: $grey-dark;
     }
     &-page {
       height: 1px;
       width: 29px;
-      background-color: #cfcfcf;
+      background-color: $grey-dark;
     }
   }
 }
@@ -138,9 +144,9 @@
   display: none;
 }
 .active-arrow {
-  stroke: #070707;
+  stroke: $black;
 }
 .active-page {
-  background-color: #070707;
+  background-color: $black;
   height: 2px;
 }
