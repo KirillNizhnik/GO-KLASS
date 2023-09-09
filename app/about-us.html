@@ -22,13 +22,23 @@
           <h1 class="about-title">Хто ми</h1>
           <ul class="about-list">
             <li class="about-list__item">
-              <img
-                class="about-list__item-img"
-                src="./images/about-us-1.jpg"
-                alt="Our work"
-              />
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                  ./images/about-us-1.jpg"/>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/about-us-2.jpg"/>
+                <img
+                class="about-list__item-img about-list__item-img-first"
+                  src="./images/about-us-2.jpg"
+                  alt="Our work"
+                />
+              </picture>
               <div class="about-list__item-container about-list__item-first">
-                <p class="about-list__item-container-text">
+                <p class="about-list__item-container-text about-list__item-container-first">
                   ГО «Всеукраїнська організація "Клас"» - неприбуткова
                   організація, що створена 01 квітня 1998 року. Цільовою та
                   пріоритетною групою організації завжди були і залишаються діти
@@ -55,11 +65,21 @@
                 width="84"
                 height="69"
               />
-              <img
+              <picture >
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                  ./images/about-us-2.jpg"/>
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                  ./images/about-us-1.jpg"/>
+                <img
                 class="about-list__item-img"
-                src="./images/about-us-2.jpg"
-                alt="Our work"
-              />
+                  src="./images/about-us-1.jpg"
+                  alt="Our work"
+                />
+              </picture>              
               <div>
                 <p class="about-list__item-container-text">
                   За час свого існування ГО «Всеукраїнська організація "Клас"»
@@ -232,13 +252,13 @@
           </ul>
           <div class="team-scroll">
             <svg class="team-scroll-arrow" width="24px" height="24px">
-              <use href="images/icons.svg#icon-about-us-arrow-left"></use>
+              <use href="./images/icons.svg#icon-about-us-arrow-left"></use>
           </svg>
+            <div class="team-scroll-page active-page"></div>
             <div class="team-scroll-page"></div>
             <div class="team-scroll-page"></div>
             <div class="team-scroll-page"></div>
-            <div class="team-scroll-page"></div>
-            <svg class="team-scroll-arrow active" width="24px" height="24px">
+            <svg class="team-scroll-arrow active-arrow" width="24px" height="24px">
               <use href="images/icons.svg#icon-about-us-arrow-right"></use>
           </svg>            
           </div>

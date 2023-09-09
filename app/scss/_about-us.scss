@@ -104,6 +104,7 @@
         font-size: 14px;
         font-weight: 600;
         line-height: 1.28;
+        text-align: center;
       }
       &-text {
         text-align: center;
@@ -117,12 +118,12 @@
 
   &-scroll {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
    justify-content: center;
    gap: 16px;
    align-items: center;
     &-arrow {
-     color: #CFCFCF;
+     stroke: #CFCFCF;
     }
     &-page {
       height: 1px;
@@ -133,4 +134,11 @@
 }
 .disabled {
   display: none;
+}
+.active-arrow {
+  stroke: #070707;
+}
+.active-page {
+  background-color: #070707;
+  height: 2px;
 }
