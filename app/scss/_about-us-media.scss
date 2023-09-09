@@ -1,52 +1,99 @@
-
-  
-  @media screen and (min-width: 768px) {
-    .about {
-        &-list {
-            display: flex;
-            flex-wrap: ;
-        }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+  .about {
+    padding-bottom: 36px;
+    &-title {
+      text-align: left;
+      margin-bottom: 32px;
     }
-    .about {
-        padding-bottom: 36px;
-        &-title {
-          text-align: left;
-          margin-bottom: 32px;
+    &-list {
+      display: flex;
+      flex-wrap: nowrap;
+      gap: 24px;
+      &__item {
+        &-picture {
+          width: 344px;
+          height: 264px;
+          &-img {
+            margin-bottom: 24px;
+          }
         }
-        &-list {
-          &__second {
-            position: relative;
-            z-index: 1;
+        &-picture-first {
+          order: 2;
+          width: 336px;
+          height: 276px;
+          margin-bottom: 0;
+        }
+        &-container {
+          &-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
           }
-          &__item {
-            &-bg {
-              position: absolute;
-              z-index: -10;
-              right: 0;
-              top: -35px;
-            }
-            &-img {
-              margin-bottom: 22px;
-              width: 343px;
-              height: 214px;
-            }
-            &-container {
-              &-text {
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5;
-              }
-            }
-            &-first {
-              margin-bottom: 24px;
-            }
-          }
-          &__second {
-          }
+        }
+        &-first {
+          order: 1;
         }
       }
-   .about-list__item-img-first {
-    order: 2;
-   }
-
+      &__list:first-child {
+        width: 336px;
+      }
+    }
+    .about-list__item:first-child {
+      width: 336px;
+    }
   }
+
+  .its-we {
+    padding: 36px 0;
+    &-title {
+      text-align: left;
+      margin-bottom: 16px;
+    }
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px 36px;
+      &__item {
+        position: relative;
+        padding-top: 38px;
+        width: 324px;
+        &-title {
+          margin-bottom: 24px;
+        }
+        &-text {
+        }
+      }
+    }
+  }
+  .its-we-list__item:nth-child(4) {
+    order: 5;
+  }
+
+  .its-we-list__item:nth-child(5) {
+    order: 4;
+  }
+  .its-we-list__item:nth-child(6) {
+    order: 6;
+  }
+  .team {
+    padding-bottom: 72px;
+    &-title {
+      margin-bottom: 32px;
+    }
+    &-list {
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 44px;
+      &__item {
+        width: calc((100% - 16px * 3) / 4);
+      }
+    }
+  }
+  .disabled {
+    display: unset;
+  }
+}
