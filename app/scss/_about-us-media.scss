@@ -16,13 +16,14 @@
           &-img {
             margin-bottom: 24px;
           }
+          &-first {
+            order: 2;
+            width: 336px;
+            height: 276px;
+            margin-bottom: 0;
+                      }          
         }
-        &-picture-first {
-          order: 2;
-          width: 336px;
-          height: 276px;
-          margin-bottom: 0;
-        }
+
         &-container {
           &-text {
             font-size: 16px;
@@ -31,12 +32,13 @@
           }
         }
         &-first {
+          margin-bottom: 24px;
           order: 1;
         }
       }
-      // &__list:first-child {
-      //   width: 336px;
-      // }
+      &__first {
+        margin-bottom: 0;
+      }
     }
     .about-list__item:first-child {
       width: 336px;
@@ -86,6 +88,7 @@
     &-list {
       gap: 16px;
       flex-wrap: wrap;
+      margin-bottom: 44px;
       &__item {
         width: calc((100% - 16px * 3) / 4);
       }
@@ -185,6 +188,7 @@
     }
     &-list {
       column-gap: 56px;
+      row-gap: 28px;
       &__item {
         position: relative;
         padding-top: 38px;
@@ -197,6 +201,7 @@
         &-text {
           font-size: 18px;
           line-height: 1.33;
+          width: unset;
           max-width: 332px;
         }
       }
@@ -229,29 +234,29 @@
         gap: 28px;
       }
     }
-  
-  &-list {
-    gap: 16px;
-    flex-wrap: wrap;
-    row-gap: 35px;
-    &__item {
-      width: calc((100% - 16px * 3) / 4);
-      &-img {
-        margin-bottom: 24px;
-      }
-      &-title {
-        margin-bottom: 8px;
-        font-size: 18px;
-      }
-      &-text {
-        font-size: 16px;
-        line-height: 1.25;
-        width: 235px;
+
+    &-list {
+      gap: 16px;
+      flex-wrap: wrap;
+      row-gap: 35px;
+      &__item {
+        width: calc((100% - 16px * 3) / 4);
+        &-img {
+          margin-bottom: 24px;
+        }
+        &-title {
+          margin-bottom: 8px;
+          font-size: 18px;
+        }
+        &-text {
+          font-size: 16px;
+          line-height: 1.25;
+          width: 235px;
+        }
       }
     }
+    &-scroll {
+      display: none;
+    }
   }
-  &-scroll {
-    display: none;
-  }
-}
 }

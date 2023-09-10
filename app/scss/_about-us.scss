@@ -27,23 +27,28 @@
         right: 0;
         top: -35px;
       }
-      &-img {
-        margin-bottom: 22px;
+      &-picture {
+        margin-bottom: 16px;
         width: 343px;
         height: 214px;
       }
-      &-container {
+      &-container {        
         &-text {
           font-size: 16px;
           font-weight: 400;
           line-height: 1.5;
+          margin-bottom: 10px;
+        }
+        &-last {
+          margin-bottom: 0;
         }
       }
-      &-first {
-        margin-bottom: 24px;
-      }
+    }
+    &__first {
+      margin-bottom: 24px;
     }
     &__second {
+      margin-bottom: 0;
     }
   }
 }
@@ -80,7 +85,8 @@
       &-text {
         font-size: 16px;
         font-weight: 400;
-        line-height: 1.5;
+        line-height: 1.5;        
+        width: 323px;
       }
     }
   }
@@ -105,7 +111,8 @@
   &-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 15px;    
+    margin-bottom: 24px;
     &__item {
       display: flex;
       flex-direction: column;
