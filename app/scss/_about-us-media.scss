@@ -55,11 +55,12 @@
       &__item {
         position: relative;
         padding-top: 38px;
-        width: 324px;
+        width: calc((100% - 36px) / 2);
         &-title {
           margin-bottom: 24px;
         }
         &-text {
+          width: 324px;
         }
       }
     }
@@ -76,20 +77,22 @@
   }
   .team {
     padding-bottom: 72px;
-    &-title {
-      margin-bottom: 32px;
+
+    &-wrap {
+      &-title {
+        margin-bottom: 32px;
+      }
     }
     &-list {
       gap: 16px;
       flex-wrap: wrap;
-      margin-bottom: 44px;
       &__item {
         width: calc((100% - 16px * 3) / 4);
       }
     }
   }
   .disabled {
-    display: unset;
+    display: flex;
   }
 }
 @media screen and (min-width: 1240px) {
@@ -173,34 +176,82 @@
       width: unset;
     }
   }
-.its-we {
-  padding: 56px 0 66px 0;
-  &-title {
-    margin-bottom: 20px;
-    font-size: 40px;
+  .its-we {
+    padding: 56px 0 66px 0;
+    &-title {
+      margin-bottom: 20px;
+      font-size: 40px;
       line-height: 1.2;
-  }
-  &-list {
-    &__item {
-      position: relative;
-      padding-top: 38px;
-      width: calc((100% - 36px * 2) / 3);
-      &-title {
-        margin-bottom: 24px;
-      }
-      &-text {
+    }
+    &-list {
+      column-gap: 56px;
+      &__item {
+        position: relative;
+        padding-top: 38px;
+        width: calc((100% - 56px * 2) / 3);
+        &-title {
+          margin-bottom: 22px;
+          font-size: 24px;
+          line-height: 1.16;
+        }
+        &-text {
+          font-size: 18px;
+          line-height: 1.33;
+          max-width: 332px;
+        }
       }
     }
   }
-}
-.its-we-list__item:nth-child(4) {
-  order: 5;
-}
+  .its-we-list__item:nth-child(4) {
+    order: 4;
+  }
 
-.its-we-list__item:nth-child(5) {
-  order: 4;
-}
-.its-we-list__item:nth-child(6) {
-  order: 6;
+  .its-we-list__item:nth-child(5) {
+    order: 5;
+  }
+  .team {
+    padding: 66px 0 163px 0;
+    &-wrap {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      &-title {
+        font-size: 40px;
+        line-height: 1.2;
+        margin-bottom: 36px;
+        text-align: left;
+      }
+      &__arrow {
+        display: flex;
+        width: 124px;
+        margin-bottom: 36px;
+        align-items: center;
+        gap: 28px;
+      }
+    }
+  
+  &-list {
+    gap: 16px;
+    flex-wrap: wrap;
+    row-gap: 35px;
+    &__item {
+      width: calc((100% - 16px * 3) / 4);
+      &-img {
+        margin-bottom: 24px;
+      }
+      &-title {
+        margin-bottom: 8px;
+        font-size: 18px;
+      }
+      &-text {
+        font-size: 16px;
+        line-height: 1.25;
+        width: 235px;
+      }
+    }
+  }
+  &-scroll {
+    display: none;
+  }
 }
 }
