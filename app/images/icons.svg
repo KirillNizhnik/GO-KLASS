@@ -149,5 +149,11 @@
 <path fill="#c5221f" style="fill: var(--color20, #c5221f)" d="M7.2 12.883l4 2.894v-5.016l-1.12-0.81c-1.188-0.859-2.88-0.042-2.88 1.389v1.544z"></path>
 <path fill="none" stroke="#acacac" style="stroke: var(--color15, #acacac)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8" d="M16 0.4c8.616 0 15.6 6.984 15.6 15.6s-6.984 15.6-15.6 15.6c-8.616 0-15.6-6.984-15.6-15.6s6.984-15.6 15.6-15.6z"></path>
 </symbol>
+<symbol id="icon-about-us-arrow-right" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M4 16h24M28 16l-11.333 11.333M28 16l-11.333-11.333"></path>
+</symbol>
+<symbol id="icon-about-us-arrow-left" viewBox="0 0 32 32">
+<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M28 16h-24M4 16l11.333-11.333M4 16l11.333 11.333"></path>
+</symbol>
 </defs>
 </svg>
