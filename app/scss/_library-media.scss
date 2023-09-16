@@ -1,0 +1,102 @@
+@media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+      padding: 0 32px;
+    }
+    .library{
+        margin: 40px auto 72px auto;
+    
+        &_title {
+          text-align: left;
+    
+        }
+        &_list {
+           display: flex;
+           flex-direction: row;
+           
+        } 
+        &_list-item:not(:first-child) {
+            margin-right: 35px;
+            padding: 0;
+            
+        }
+        &_list_item {
+            display: inline-block;
+            list-style: none;
+            position: relative;
+        }
+        &_list-svg{
+            margin-right: 0;
+        }
+        &_item {
+            width: 400px;
+            flex-shrink: 0;
+            display: flex;            
+        }
+        &_item:hover,
+        &_item:focus {
+            outline: 2px solid #2031CB;
+        }
+        &_grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 32px;
+            margin-top: 55px;
+        }
+    }
+  }
+    
+    
+  @media screen and (min-width: 1240px) {
+    .container {
+      width: 1240px;
+      padding: 0 50px;
+    }
+  
+    .library{
+        margin: 64px auto 112px auto;
+        &_title {
+           text-align: left;
+    
+        }
+        &_list {
+            display: flex;
+            flex-direction: row;
+        } 
+        &_list-item:not(:first-child) {
+            margin-right: 115px;
+        }
+        &_list-svg{
+            display: block;
+        }
+        &_item {
+            display: flex;
+            width: 558px;
+            height: 164px;
+            flex-shrink: 0;
+            
+        }
+        &_item:hover,
+        &_item:focus {
+            outline: 2px solid #2031CB;
+        }
+        
+        &_img {
+            width: 267px;
+            height: 164px;
+            flex-shrink: 0;
+        }
+        &_grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 60px;
+            margin-top: 55px;
+          
+        }
+        &_text {
+            margin-bottom: 65px;
+        }
+    
+    }
+}
+
