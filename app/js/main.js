@@ -13,4 +13,3 @@
         refs.openModalBtn.classList.toggle("inactive-btn")
     }
 })();
-
