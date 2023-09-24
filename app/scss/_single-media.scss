@@ -1,0 +1,171 @@
+@media screen and (min-width: 768px) {
+  .single-section {
+    padding-bottom: 72px;
+    &-container {
+      padding: 178px 181px 10px 181px;
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 52.19%,
+          rgba(0, 0, 0, 0.5) 85.73%
+        ),
+        url(../images/single-bg-tablet.jpg), lightgray 50%;
+      border-radius: 4px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% auto;
+      margin-bottom: 32px;
+      &-title {
+        padding: 0;
+        background: none;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      &-date {
+        margin-bottom: 0;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.28;
+        color: $white;
+      }
+    }
+    &-textbox {
+      gap: 16px;
+      margin-bottom: 32px;
+      &-content {
+      }
+    }
+    &-imgbox {
+      margin-bottom: 72px;
+      &-main {
+        width: 704px;
+        margin-bottom: 24px;
+      }
+      &-fotos {
+        display: flex;
+        gap: 16px;
+        &-foto {
+          width: 164px;
+          border-radius: 4px;
+        }
+      }
+      &-fotos:last-child::before {
+        content: "+8";
+        color: $white;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 1.37;
+        text-transform: uppercase;
+        position: absolute;
+        right: 13%;
+        top: 55.5%;
+        z-index: 20;
+      }
+    }
+    &-scroll {
+      display: none;
+    }
+    &-sidebar {
+      &-title {
+        margin-bottom: 32px;
+        text-align: left;
+      }
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        &__item {
+          width: 344px;
+          &-title {
+            text-align: left;
+            height: 45px;
+          }
+        }
+        &__last {
+          display: unset;
+        }
+      }
+    }
+  }
+  .last-gallery-foto {
+    filter: brightness(60%);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .single-section {
+    padding: 56px 0 112px 0;
+    &-container {
+      padding: 304px 181px 20px 181px;
+      margin-bottom: 72px;
+      &-title {
+        margin-bottom: 12px;
+        font-size: 24px;
+        line-height: 1.16;
+      }
+      &-date {
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.25;
+      }
+    }
+    &-textbox {
+      gap: 16px;
+      margin-bottom: 24px;
+      &-content {
+        font-size: 18px;
+        line-height: 1.33;
+      }
+    }
+    &-imgbox {
+      margin-bottom: 0;
+      &-main {
+        width: 752px;
+      }
+      &-fotos {
+        gap: 24px;
+        &-foto {
+          width: 170px;
+        }
+      }
+      &-fotos:last-child::before {
+        font-size: 36px;
+        font-weight: 500;
+        line-height: 1.11;
+        right: 40.5%;
+        top: 91.5%;;
+      }
+    }
+    &-scroll {
+      display: none;
+    }
+    &-sidebar {
+      &-title {
+        margin-bottom: 36px;
+      }
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        &__item {
+          width: 292px;
+          &-img {
+            width: 100%;
+          }
+          &-title {
+            height: unset;
+          }
+        }
+        &__last {
+          display: none;
+        }
+      }
+    }
+    &-all-content {
+      display: flex;
+      gap: 60px;
+      &-box {
+        width: 752px;
+      }
+    }
+  }
+}
