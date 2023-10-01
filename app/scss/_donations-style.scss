@@ -1,0 +1,138 @@
+h2 {
+  margin: 52px 0 36px;
+}
+
+.donation {
+  &__qrWrap {
+    padding: 74px 97px;
+    background: $light-light-violet;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__qrText {
+    padding: 41px 0 0;
+
+    p {
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      margin: 12px 0 36px;
+
+      a {
+        color: $violet;
+        text-decoration: underline;
+      }
+
+      span {
+        font-size: larger;
+      }
+    }
+  }
+
+  &__title {
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+  }
+
+  &__btn {
+    cursor: pointer;
+    background-color: $violet;
+    border: 1px solid $violet;
+    border-radius: 4px;
+    color: $white;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding: 12px 24px;
+    margin: 0 auto 32px auto;
+    transition: 450ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &__btn:hover {
+    background-color: $white;
+    color: $violet;
+  }
+
+  &__description {
+    padding: 36px 0 0 0;
+    margin: 76px 0 112px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 112px;
+      height: 98px;
+      background-image: url(../images/donation-descr-fon.png);
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: -18px;
+      z-index: -1;
+    }
+  }
+
+  &__descriptionImage {
+    width: 558px;
+    height: 280px;
+    background: url(../images/donation-descr-photo.jpg) no-repeat center;
+    border-radius: 4px;
+  }
+
+  &__descrioptionText {
+    margin-top: 56px;
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+    width: 532px;
+  }
+
+  &__details {
+    background: $light-light-violet;
+    padding: 32px 0 32px 97px;
+    margin: 0 auto 112px;
+
+    li {
+      margin-bottom: 24px;
+      font-family: Raleway;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    li:nth-last-child(1) {
+      margin-bottom: 0;
+    }
+
+    li:nth-child(4) {
+      position: relative;
+    }
+
+    li:nth-child(4) > span + span {
+      padding-right: 20px;
+    }
+
+    li:nth-child(4)::after {
+      content: url(../images/donation-copy-icon.svg);
+      position: absolute;
+      top: -1px;
+    }
+  }
+
+  &__detailsField {
+    display: inline-block;
+    width: 291px;
+    font-weight: 600;
+  }
+
+  &__detailsFieldName {
+    font-weight: 400;
+  }
+}
