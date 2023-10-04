@@ -43,9 +43,12 @@
   }
   &-imgbox {
     margin-bottom: 24px;
-    &-main {
-      width: 343px;
+    &-main {      
       border-radius: 4px;
+      display: block;
+    }
+    &-main img {
+      width: 343px;
     }
   }
   &-scroll {
