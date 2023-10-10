@@ -1,0 +1,137 @@
+
+@media screen and (min-width: 768px) {
+   .our_project {
+    &-title{
+        text-align: left;
+        margin-bottom: 50px;
+    }
+    &-list {
+        display : flex;
+        justify-content: space-between;
+     }
+  
+    &-wrapper {
+        text-align: center;
+        flex-direction: column; 
+        justify-content: flex-start;
+        align-items: center; 
+        gap: 36px; 
+        display: inline-flex;
+    }
+    &-content {
+        display: flex;
+
+    }
+    &-headline {
+        width: 752px;
+       color: $black;
+       font-size: 24px; 
+       line-height: 28px; 
+       margin-bottom: 0;
+    }
+    &-img {
+        width: 344px;
+        height: 244px;
+    }
+    &-text {
+        margin-left: 24px;
+        
+    }
+    &-text_list_item{
+        display: none;
+        margin-bottom: 35px;
+    }
+    &-budget {
+        text-align: left;
+        margin-left: 24px;
+        margin-bottom: 0;
+    }
+   
+   }
+
+}
+
+  @media screen and (min-width: 1240px) {
+    .our_project{
+        &-title{
+            font-size: 40px;   
+        }
+        &-list {
+           display : flex;
+           justify-content: flex-start;
+           
+        }
+        &-list-item {
+            margin-right: 86px;
+            padding: 0px 32px;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+        &-wrapper {
+            text-align: center;
+            flex-direction: column; 
+            justify-content: flex-start;
+            align-items: center; 
+            gap: 36px; 
+            display: inline-flex;
+        }
+        &-content {
+            display: flex;
+    
+        }
+        &-headline {
+            width: 752px;
+           color: $black;
+           font-size: 24px; 
+           line-height: 28px; 
+           margin-bottom: 0;
+        }
+        &-content {
+            display: flex;
+    
+        }
+        &-img {
+            width: 558px;
+            height: 336px;
+        }
+        &-status {
+            margin-right: 236px;
+            margin-left: 24px;
+        }
+        &-text {
+            width: 558px; 
+            font-size: 18px; 
+             margin-left: 24px;
+             text-align: justify;
+        }
+        &-text_wrapper {
+            margin-top: 10px;
+        }
+        &-text_list{
+            text-align: left;
+            font-size: 18px; 
+            font-family: "Raleway";
+             font-weight: 400; 
+             line-height: 24px; 
+             word-wrap: break-word;
+             
+        }
+        &-budget {
+            text-align: left;
+            margin-left: 24px;
+            margin-top: 40px;
+        }
+        &-budget_second {
+            margin-top: 120px;
+            text-align: left;
+            margin-left: 24px;
+            
+        }
+    
+    }
+    
+   
+  }
+  

@@ -1,0 +1,99 @@
+.footer {
+  background-color: $white;
+  padding: 80px 0 16px 0;
+  position: relative;
+  &-info {
+    padding-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 65px;
+    margin-bottom: 40px;
+    &-nav {
+        display: flex;
+        gap: 65px;
+      &-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        flex-direction: column;
+        &-item {
+          &-link {
+            font-size: 12px;
+            font-weight: 600;
+            line-height: 1.33;
+            transition: color 450ms cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          &-link:hover {
+            color: $violet;
+          }
+        }
+      }
+    }
+    &-contacts {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 1.33;
+      font-variant-numeric: lining-nums proportional-nums;
+      order: 2;
+      display: flex;
+      gap: 43px;
+      &-email {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      &__list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        &-item {
+          &-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+          }
+        }
+      }
+    }
+    &-media {
+      order: 1;
+      &-title {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 1.33;
+        margin-bottom: 11px;
+      }
+      &__list {
+        display: flex;
+        gap: 17px;
+        &-item {
+          &-link {
+            &-icon {
+            }
+          }
+        }
+      }
+    }
+  }
+  &-info::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #ffffff, #cfcfcf, #ffffff);
+  }
+  &-policy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &-text {
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.33;
+      font-variant-numeric: lining-nums proportional-nums;
+    }
+  }
+}
