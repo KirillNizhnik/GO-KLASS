@@ -1,0 +1,91 @@
+.our_project{
+    margin: 40px auto 80px auto;
+    &-title{
+        color: $black; 
+        font-size: 30px; 
+        font-family: "Raleway";
+         font-weight: 700; 
+         line-height: 48px;
+          word-wrap: break-word;
+          margin-bottom: 50px;
+          text-align: center;
+    }
+    &-list {
+      text-align: center;
+       
+    }
+    &-list-item {
+        font-family: "Raleway";
+            color: $black;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 20px;
+             margin-bottom: 32px;
+    }
+    &-list-item:hover,
+    &-list-item:focus{
+        border-bottom: 5px solid $yellow;
+        border-radius: 5px;
+    }
+  
+    &-headline {
+        width: 343px; 
+        text-align: center;
+         color: $black; 
+         font-size: 18px;
+        font-family: "Raleway";
+         font-weight: 600; 
+         line-height: 24px;
+         margin-bottom: 24px;
+    }
+    &-img {
+        width: 343px;
+        height: 206px;
+    }
+    &-dates {
+        display: flex;
+        margin-bottom: 36px;
+        justify-content: space-between;
+    }
+    &-status {
+        margin-right: 30px;
+        margin-left: 24px;
+    }
+    &-text {
+        width: 343px; 
+        height: 121px;
+         color: $black; 
+         font-size: 16px; 
+         font-family: "Raleway"; 
+         font-weight: 400;
+          line-height: 24px; 
+          word-wrap: break-word;
+          text-align: justify;
+          margin-bottom: 32px;
+    }
+    &-text_wrapper {
+        margin-top: 10px;
+    }
+    &-text_list{
+        text-align: left;
+        font-size: 18px; 
+        font-family: "Raleway";
+         font-weight: 400; 
+         line-height: 24px; 
+         word-wrap: break-word;
+         
+    }
+
+    &-budget {
+        text-align: left;
+        margin-left: 24px;
+        margin-bottom: 32px;
+    }
+    &-budget_second {
+        margin-bottom: 32px;
+        text-align: left;
+        margin-left: 24px;
+    }
+
+}
