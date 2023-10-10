@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) {
+  .our-goal {
+    &__info {
+      text-align: center;
+      width: 592px;
+      margin-right: auto;
+      margin-left: auto;
+      &-title {
+        width: 508px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+    }
+    &-btn {
+      width: 340px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+@media screen and (min-width: 1240px) {
+  .our-goal {
+    &-container {
+      display: flex;
+      align-items: center;
+      padding: 0 97px;
+      justify-content: space-between;
+    }
+    &__info {
+      text-align: left;
+      width: 558px;
+      margin-right: unset;
+      margin-left: unset;
+      &-title {
+        width: unset;
+        margin-right: unset;
+        margin-left: unset;
+      }
+      &-text {
+        margin-bottom: 0;
+      }
+    }
+    &-btn {
+      padding: 10px 22px;
+      width: 151px;
+      margin: 0;
+    }
+  }
+}
