@@ -84,12 +84,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    text-align: center;
-  }
-  h2 {
-    margin: 40px auto 22px;
-  }
+
   .donation {
     &__qrWrap {
       max-width: 375px;
