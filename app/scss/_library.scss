@@ -23,15 +23,18 @@
                  flex-wrap: nowrap;
                  align-items: center;
                  gap: 42px;
-             } 
-             &_list-item:not(:first-child) {
-                 margin: 0;
-                 padding: 0;
-                 
-             }
+                 cursor: pointer;
+             }       
              &_list-item__color{
                 color: $black;
                 
+            }
+            &_list-item__color.current{
+                border-bottom-style: solid;
+                border-bottom-color: $yellow;
+                border-bottom-width: 7px;
+                border-bottom-right-radius: 5%;
+                border-bottom-left-radius: 5%;
             }
             &_list-item__color:hover,
             &_list-item__color:focus {
@@ -41,13 +44,11 @@
                 border-bottom-right-radius: 5%;
                 border-bottom-left-radius: 5%;
             }
-             &_list-svg{
-                 margin-right: 20px;
-                 display: none;
-             }
              &_item {
-                margin-bottom: 25px;
                 display: flex;
+                cursor: pointer;
+                gap: 15px;
+                margin-bottom: 24px;
              }
              &_item:hover,
              &_item:focus {
@@ -69,6 +70,7 @@
                  font-family: "Raleway";
                  font-weight: 500; 
                  line-height: 20px; 
+                 display: flex;
                 
              }
              &_grid-wrapper {
