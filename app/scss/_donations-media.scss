@@ -1,154 +1,147 @@
 @media screen and (min-width: 768px) {
-    .donation {
-        &__main-title {
-            margin-bottom: 32px;
-            text-align: left;
-        }
-
-        &__qrText {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            &-title {
-                margin-bottom: 12px;
-            }
-        }
-
-        &__title {
-            margin-bottom: 32px;
-            text-align: left;
-            width: 462px;
-        }
-
-        &__btn {
-            padding: 10px 110px;
-            width: 344px;
-        }
-
-        &__description {
-            padding: 108px 0 72px 0;
-            flex-direction: row;
-            gap: 24px;
-            &-bcg {
-                top: 70px;
-            }
-            &-img {
-                width: 344px;
-                height: 240px;
-            }
-        }
-
-        &__descrioptionText {
-            margin-top: 0;
-        }
-        &__details {
-            padding: 32px 0 40px 0;
-            &-list {
-                &-item {
-                    display: flex;
-                    gap: 58px;
-                }
-
-                &-item:nth-child(4)::after {
-                    display: none;
-                }
-            }
-        }
-
-        &__detailsField {
-            width: 194px;
-            margin-bottom: 0;
-        }
-
-        &__detailsFieldName {
-        }
+  .donation {
+    &__main-title {
+      margin-bottom: 32px;
+      text-align: left;
     }
 
+    &__qrText {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &-title {
+        margin-bottom: 12px;
+      }
+    }
+    &__title {
+      margin-bottom: 32px;
+      text-align: left;
+      width: 462px;
+    }
+    &__description {
+      padding: 108px 0 72px 0;
+      flex-direction: row;
+      gap: 24px;
+      &-bcg {
+        top: 70px;
+      }
+      &-img {
+        width: 344px;
+        height: 240px;
+      }
+    }
+
+    &__descrioptionText {
+      margin-top: 0;
+    }
+    &__details {
+      padding: 32px 0 40px 0;
+      &-list {
+        &-item {
+          display: flex;
+          gap: 58px;
+        }
+      }
+    }
+    &__detailsField {
+      width: 194px;
+      margin-bottom: 0;
+    }
+  }
 }
-
-
-// @media screen and (max-width: 1240px) {
-//   .donation {
-//     &__qrWrap {
-//       padding: 40px 0px;
-//       text-align: center;
-//       position: relative;
-//       width: 768px;
-//       transform: translateX(-32px);
-//     }
-
-//     &__qrText {
-//       padding: 0;
-//       margin: 0 auto;
-
-//       p {
-//         font-size: 16px;
-//         line-height: 22.5px;
-//         margin-bottom: 314px;
-
-//         a {
-//           text-decoration: none;
-//         }
-
-//         span {
-//           font-size: larger;
-//         }
-//       }
-//     }
-
-//     &__qrCode {
-//       position: absolute;
-//       top: 141px;
-//       left: 50%;
-//       transform: translateX(-50%);
-//     }
-
-//     &__title {
-//       font-size: 30px;
-//       line-height: 34px;
-//     }
-
-//     &__btn {
-//       padding: 7px 117.5px;
-//       margin: 0 auto;
-//     }
-
-//     &__description {
-//       &::before {
-//         width: 83px;
-//         height: 69px;
-//         background-image: url(../images/donation-descr-fon1.png);
-//         left: 0;
-//       }
-//     }
-
-//     &__descriptionImage {
-//       width: 344px;
-//       height: 240px;
-//     }
-
-//     &__descrioptionText {
-//       width: 336px;
-//       font-size: 16px;
-//       margin: 0;
-//     }
-
-//     &__details {
-//       width: 768px;
-//       padding: 32px;
-//       transform: translateX(-32px);
-
-//       li {
-//         font-size: 16px;
-//         line-height: 22.5px;
-//       }
-//     }
-
-//     &__detailsField {
-//       display: inline-block;
-//       width: 249px;
-//       font-weight: 600;
-//     }
-//   }
-// }
+@media screen and (min-width: 1240px) {
+  .donation {
+    padding-top: 52px;
+    &__main-title {
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 36px;
+    }
+    &__qrWrap {
+      padding: 115px 47px;
+    }
+    &__qrText {
+      position: relative;
+      align-items: flex-start;
+      &-title {
+        font-size: 40px;
+        line-height: 1.2;
+        text-align: center;
+      }
+      &-text {
+        font-size: 18px;
+        line-height: 1.33;
+        margin-bottom: 36px;
+      }
+    }
+    &__qrCode {
+      position: absolute;
+      right: 0;
+      top: -36px;
+    }
+    &__title {
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 36px;
+      width: unset;
+    }
+    &__btn {
+      font-size: 18px;
+      line-height: 1.33;
+      padding: 12px 24px;
+      width: 186px;
+    }
+    &__description {
+      padding: 112px 0;
+      align-items: center;
+      gap: 50px;
+      &-bcg {
+        display: none;
+        &-desc {
+          display: block;
+          position: absolute;
+          z-index: -1;
+          top: 72px;
+          width: 112px;
+          height: 98px;
+          left: -20px;
+        }
+      }
+      &-img {
+        width: 558px;
+        height: 280px;
+      }
+    }
+    &__descrioptionText {
+      font-size: 18px;
+      line-height: 1.33;
+    }
+    &__details {
+        &-container {
+            padding-right: 97px;
+            padding-left: 97px;
+        }
+        &-list {
+          &-item {
+            gap: 73px;
+          }  
+          &-item:nth-child(4)::after {
+            content: url(../images/donation-copy-icon.svg);
+            position: absolute;
+            left: 504px;
+            cursor: pointer;
+          }
+        }
+    }
+    &__detailsField {
+      width: 218px;
+      font-size: 18px;
+      line-height: 1.33;
+    }
+    &__detailsFieldName {
+        font-size: 18px;
+        line-height: 1.33;
+    }
+  }
+}

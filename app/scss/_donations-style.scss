@@ -19,12 +19,12 @@
       font-size: 30px;
       font-weight: 700;
       line-height: 1.13;
-      margin-bottom: 22px;
+      margin-bottom: 12px;
       text-align: center;
     }
     &-text {
       font-family: Raleway;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 600;
       line-height: 1.4;
       text-align: center;
@@ -64,9 +64,8 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 100%;
+    padding: 10px 110px;
+    width: 344px;
     transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1),
       color 450ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -86,6 +85,9 @@
       position: absolute;
       z-index: -1;
       top: 78px;
+      &-desc {
+        display: none;
+      }
     }
     &-img {
       border-radius: 4px;
@@ -108,14 +110,7 @@
       gap: 24px;
        &-item:nth-child(4) {
         position: relative;
-      }
-      &-item:nth-child(4)::after {
-        content: url(../images/donation-copy-icon.svg);
-        position: absolute;
-        top: -1px;
-        left: 230px;
-        cursor: pointer;
-      }
+      }      
     }
   }
   &__detailsField {
