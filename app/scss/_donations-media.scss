@@ -48,6 +48,10 @@
       width: 194px;
       margin-bottom: 0;
     }
+    &-copy-icon {
+      left: 466px;
+      top: -1px;
+    }
   }
 }
 @media screen and (min-width: 1240px) {
@@ -118,21 +122,15 @@
       line-height: 1.33;
     }
     &__details {
-        &-container {
-            padding-right: 97px;
-            padding-left: 97px;
+      &-container {
+        padding-right: 97px;
+        padding-left: 97px;
+      }
+      &-list {
+        &-item {
+          gap: 73px;
         }
-        &-list {
-          &-item {
-            gap: 73px;
-          }  
-          &-item:nth-child(4)::after {
-            content: url(../images/donation-copy-icon.svg);
-            position: absolute;
-            left: 504px;
-            cursor: pointer;
-          }
-        }
+      }
     }
     &__detailsField {
       width: 218px;
@@ -140,8 +138,15 @@
       line-height: 1.33;
     }
     &__detailsFieldName {
-        font-size: 18px;
-        line-height: 1.33;
+      font-size: 18px;
+      line-height: 1.33;
+    }
+    &-copy-icon {
+      display: block;
+      position: absolute;
+    }
+    &-copy-icon {
+      left: 530px;
     }
   }
 }
