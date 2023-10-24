@@ -15,17 +15,12 @@
            flex-direction: row;
            
         } 
-        &_list-item:not(:first-child) {
-            margin-right: 35px;
-            padding: 0;
-            
-        }
         &_list_item {
             display: inline-block;
             list-style: none;
-            position: relative;
+            margin-bottom: 0;
         }
-        &_list-svg{
+        &_list-item__color.current{
             margin-right: 0;
         }
         &_item {
@@ -62,10 +57,9 @@
         &_list {
             display: flex;
             flex-direction: row;
+            gap:60px;
         } 
-        &_list-item:not(:first-child) {
-            margin-right: 115px;
-        }
+       
         &_list-svg{
             display: block;
         }
