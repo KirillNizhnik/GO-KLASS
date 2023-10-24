@@ -1,0 +1,195 @@
+@media screen and (min-width: 768px) {
+  .news-section {
+    padding-bottom: 72px;
+    &-title {
+      text-align: left;
+      margin-bottom: 32px;
+      width: unset;
+    }
+    &-container {
+      background: linear-gradient(
+          180deg,
+          rgba(0, 0, 0, 0) 52.19%,
+          rgba(0, 0, 0, 0.5) 85.73%
+        ),
+        url(../images/news-bg.jpg), lightgray 50%;
+      border-radius: 4px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100% auto;
+      padding: 201px 20px 13px 20px;
+      margin-bottom: 32px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      &__block {
+        padding: unset;
+        background-image: none;
+        background: none;
+        margin-bottom: 0;
+
+        &-title {
+          width: unset;
+          max-width: unset;
+        }
+      }
+      &-link {
+        margin-bottom: 0;
+        color: $white;
+        &-icon {
+          fill: $white;
+        }
+      }
+      &-link:hover .news-section-container-link-icon {
+        fill: $white;
+      }
+  
+      &-link:hover {
+        color: $white;        
+        font-weight: 500;
+      }
+    }
+    &__block {
+      &-list {
+        &-item {
+          display: flex;
+          gap: 24px;
+          position: unset;
+          &-img {
+            margin: 0;
+            position: unset;
+            height: 252px;
+          }
+          &-descr {
+            height: 252px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-end;
+            &-title {
+              width: 336px;
+              text-align: left;
+              margin-bottom: 16px;
+            }
+            &-info {
+              height: 124px;
+              gap: 8px;
+            }
+            &-down {
+              display: flex;
+              align-items: center;
+              gap: 104px;
+              &-date {
+              }
+              &-link {
+                padding-bottom: 14px;
+                padding-top: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1240px) {
+  .news-section {
+    padding: 56px 0 112px 0;
+    &-title {
+      margin-bottom: 36px;
+      font-size: 40px;
+      line-height: 1.2;
+    }
+    &-container {
+      padding: 318px 32px 38px 32px;
+      margin-bottom: 72px;
+      &__block {
+        &-title {
+          font-size: 24px;
+          line-height: 1.17;
+        }
+      }
+    }
+    &__block {
+      &-list {
+        gap: 72px;
+        margin-bottom: 72px;
+        &-item {
+          gap: 48px;
+          &-img {
+            height: 336px;
+            width: 558px;
+          }
+          &-descr {
+            height: 336px;
+            align-items: stretch;
+            &-title {
+              width: unset;
+              font-size: 24px;
+              line-height: 1.16;
+            }
+            &-info {
+              height: 208px;
+              &-text {
+                font-size: 18px;
+                line-height: 1.33;
+              }
+            }
+            &-down {
+              gap: 308px;
+              &-date {
+              }
+              &-link {
+              }
+            }
+          }
+        }
+      }
+    }
+    &-scroll {
+      display: none;
+    }
+    &-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      &-btn {
+        padding: 7px 10px 7px 10px;
+        border: none;
+        background-color: transparent;
+        &-arrow {
+          fill: $black;
+        }
+      }
+      &-page {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+    justify-content: center;
+        &-link {
+          color: $black;
+          text-align: center;
+          font-variant-numeric: lining-nums proportional-nums;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.25;
+        }
+        &-pages {
+          color: $black;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.25;
+        }
+      }
+    }
+  }
+}
+.current-page-link {
+  background-color: $grey-dark;
+}
+.disabled-nav-btn {
+  fill: $grey-dark;
+}
