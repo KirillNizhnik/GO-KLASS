@@ -1,28 +1,35 @@
-h2 {
-  margin: 52px 0 36px;
-}
-
 .donation {
+  padding-top: 40px;
+  &__main-title {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.13;
+    margin-bottom: 22px;
+    text-align: center;
+  }
   &__qrWrap {
-    padding: 74px 97px;
+    padding: 40px 0;
     background: $light-light-violet;
-    display: flex;
-    justify-content: space-between;
   }
 
   &__qrText {
-    padding: 41px 0 0;
-
-    p {
-      font-family: Raleway;
-      font-size: 18px;
+    &-title {
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 1.13;
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    &-text {
+      font-size: 16px;
       font-weight: 600;
-      line-height: 24px;
-      margin: 12px 0 36px;
-
+      line-height: 1.4;
+      text-align: center;
+      margin-bottom: 32px;
       a {
         color: $violet;
-        text-decoration: underline;
+        text-decoration: none;
+        font-variant-numeric: lining-nums proportional-nums;
       }
 
       span {
@@ -30,12 +37,17 @@ h2 {
       }
     }
   }
-
+  &__qrCode {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+  }
   &__title {
-    font-family: Raleway;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 700;
-    line-height: 48px;
+    line-height: 1.13;
+    text-align: center;
+    margin-bottom: 24px;
   }
 
   &__btn {
@@ -45,12 +57,14 @@ h2 {
     border-radius: 4px;
     color: $white;
     text-align: center;
+    font-family: Raleway, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
-    padding: 12px 24px;
-    margin: 0 auto 32px auto;
-    transition: 450ms cubic-bezier(0.4, 0, 0.2, 1);
+    line-height: 1.5;
+    padding: 10px 110px;
+    width: 344px;
+    transition: background-color 450ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 450ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   &__btn:hover {
@@ -59,81 +73,61 @@ h2 {
   }
 
   &__description {
-    padding: 36px 0 0 0;
-    margin: 76px 0 112px;
+    padding: 114px 0 80px 0;
     display: flex;
     justify-content: space-between;
     position: relative;
-
-    &::before {
-      content: "";
-      width: 112px;
-      height: 98px;
-      background-image: url(../images/donation-descr-fon.png);
-      background-size: cover;
+    flex-direction: column;
+    &-bcg {
       position: absolute;
-      top: 0;
-      left: -18px;
       z-index: -1;
+      top: 78px;
+      &-desc {
+        display: none;
+      }
+    }
+    &-img {
+      border-radius: 4px;
     }
   }
-
-  &__descriptionImage {
-    width: 558px;
-    height: 280px;
-    background: url(../images/donation-descr-photo.jpg) no-repeat center;
-    border-radius: 4px;
-  }
-
   &__descrioptionText {
-    margin-top: 56px;
-    font-family: Raleway;
+    margin-top: 24px;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 24px;
-    color: $black;
-    width: 532px;
+    font-size: 16px;
+    line-height: 1.5;
   }
 
   &__details {
     background: $light-light-violet;
-    padding: 32px 0 32px 97px;
-    margin: 0 auto 112px;
-
-    li {
-      margin-bottom: 24px;
-      font-family: Raleway;
-      font-size: 18px;
-      line-height: 24px;
-    }
-
-    li:nth-last-child(1) {
-      margin-bottom: 0;
-    }
-
-    li:nth-child(4) {
-      position: relative;
-    }
-
-    li:nth-child(4) > span + span {
-      padding-right: 20px;
-    }
-
-    li:nth-child(4)::after {
-      content: url(../images/donation-copy-icon.svg);
-      position: absolute;
-      top: -1px;
-      cursor: pointer;
+    padding: 32px 0 32px 0;
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      &-item:nth-child(4) {
+        position: relative;
+      }
     }
   }
-
   &__detailsField {
-    display: inline-block;
     width: 291px;
     font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.4;
   }
 
   &__detailsFieldName {
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 16px;
     font-weight: 400;
+    line-height: 1.5;
+  }
+  &-copy-icon {
+    display: block;
+    position: absolute;
+    left: 216px;
+    cursor: pointer;
+    top: 28px;
   }
 }

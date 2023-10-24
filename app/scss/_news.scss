@@ -19,14 +19,14 @@
       border-radius: 4px;
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 100% auto;
+      background-size: cover;
       margin-bottom: 14px;
       &-title {
         font-size: 16px;
         color: $white;
         font-weight: 600;
         line-height: 1.4;
-        width: 297px;
+        max-width: 297px;
         text-align: center;
         margin-right: auto;
         margin-left: auto;
@@ -74,6 +74,7 @@
           border-radius: 4px;
           margin-bottom: 16px;
           bottom: 326px;
+          max-width: 100%;
         }
         &-descr {
           &-title {
