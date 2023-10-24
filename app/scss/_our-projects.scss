@@ -1,0 +1,106 @@
+.our_project {
+  &-title {
+    color: $black;
+    font-size: 30px;
+    font-family: "Raleway";
+    font-weight: 700;
+    line-height: 48px;
+    word-wrap: break-word;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  &-list {
+    text-align: center;
+  }
+  &-list-item {
+    font-family: "Raleway";
+    color: $black;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  &-list-item.current {
+    border-bottom: 5px solid $yellow;
+    border-radius: 5px;
+  }
+  &-list-item:hover,
+  &-list-item:focus {
+    border-bottom: 5px solid $yellow;
+    border-radius: 5px;
+  }
+  &-wrapper {
+    text-align: center;
+    gap: 24px;
+  }
+
+  &-headline {
+    text-align: center;
+    color: $black;
+    font-size: 18px;
+    font-family: "Raleway";
+    font-weight: 600;
+    line-height: 24px;
+    margin-bottom: 24px;
+    cursor: pointer;
+  }
+  &-content {
+    margin-bottom: 32px;
+  }
+  &-img {
+    width: 343px;
+    height: 206px;
+  }
+
+  &-dates {
+    display: flex;
+    margin-bottom: 36px;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  &-text_list_item {
+    display: none;
+  }
+  &-text {
+    width: 343px;
+    height: 121px;
+    color: $black;
+    font-size: 16px;
+    font-family: "Raleway";
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+  &-text_list {
+    text-align: left;
+    font-size: 18px;
+    font-family: "Raleway";
+    font-weight: 400;
+    line-height: 24px;
+    word-wrap: break-word;
+    list-style-type: decimal;
+  }
+  &-svg-container {
+    display: flex;
+    flex-flow: row-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-budget {
+    text-align: left;
+    margin-left: 24px;
+    margin-bottom: 32px;
+  }
+  &-budget_second {
+    margin-bottom: 32px;
+    text-align: left;
+    margin-left: 24px;
+  }
+}

@@ -4,6 +4,7 @@
     &-title {
       text-align: left;
       margin-bottom: 32px;
+      width: unset;
     }
     &-container {
       background: linear-gradient(
@@ -30,6 +31,7 @@
 
         &-title {
           width: unset;
+          max-width: unset;
         }
       }
       &-link {
