@@ -1,19 +1,26 @@
 @media screen and (min-width: 768px) {
   .our_project {
+    padding-bottom: 72px;
     &-title {
       text-align: left;
+      margin-bottom: 32px;
     }
     &-list {
       display: flex;
       justify-content: space-between;
+      flex-direction: row;
+      gap: 22px;
+      margin-bottom: 32px;
+      &-item {
+        width: 220px;
+      }
     }
 
     &-text_list {
       font-size: 16px;
+      height: 76px;
     }
-    &-text_list.item {
-      display: none;
-    }
+
     &-wrapper {
       text-align: center;
       flex-direction: column;
@@ -21,16 +28,18 @@
       align-items: center;
       gap: 36px;
       display: inline-flex;
+      margin-bottom: 30px;
     }
     &-content {
       display: flex;
-      gap: 15px;
+      gap: 24px;
     }
     &-headline {
-      color: $black;
-      font-size: 24px;
-      line-height: 28px;
       margin-bottom: 0;
+      width: 482px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 24px;
     }
     &-img {
       width: 344px;
@@ -45,33 +54,35 @@
       display: flex;
       flex-flow: wrap;
       justify-content: left;
+      margin-bottom: 0;
     }
 
-    &-text_list_item {
-      display: none;
-    }
     &-dates {
       margin-top: 0;
     }
     &-budget {
       text-align: left;
-      margin-left: 0;
       margin-bottom: 10px;
-    }
-    &-budget_second {
-      margin-left: 0;
     }
   }
 }
 
 @media screen and (min-width: 1240px) {
   .our_project {
+    padding-top: 56px;
+    padding-bottom: 112px;
     &-title {
       font-size: 40px;
       text-align: left;
+      line-height: 1.2;
+      margin-bottom: 36px;
     }
     &-list {
-      display: flex;
+      gap: 42px;
+      width: 624px;
+      &-item {
+        width: 180px;
+      }
     }
     &-wrapper {
       text-align: center;
@@ -80,19 +91,29 @@
       align-items: center;
       gap: 36px;
       display: inline-flex;
+      margin-bottom: 72px;
     }
     &-headline {
       font-size: 24px;
-      line-height: 28px;
-      margin-bottom: 0;
+      line-height: 1.16;
+      margin-bottom: 36px;
+      width: 752px;
     }
     &-content {
       display: flex;
-      gap: 20px;
+      gap: 24px;
     }
     &-img {
       width: 558px;
       height: 336px;
+      object-fit: contain;
+    }
+    &-period {
+      font-size: 16px;
+      line-height: 1.25;
+    }
+    &-main {
+      gap: 72px;
     }
     &-svg-container {
       display: flex;
@@ -102,31 +123,81 @@
     &-svg-wrapper {
       display: flex;
       justify-content: space-between;
+      margin-bottom: 0;
+      align-items: center;
+      margin-top: auto;
     }
     &-text {
       width: 558px;
       font-size: 18px;
       text-align: justify;
     }
-    &-text_list {
-      list-style-type: decimal;
+    &-text_title {
+      margin-bottom: 10px;
+      font-size: 18px;
+      line-height: 1.11;
     }
     &-text_wrapper {
       display: flex;
-      justify-content: space-between;
       flex-direction: column;
     }
-    &-text_list_item {
-      display: block;
+
+    &-text_list {
+      height: 160px;
+      font-size: 18px;
+      line-height: 1.11;
     }
     &-dates {
       margin-top: 0;
+      margin-bottom: 36px;
     }
     &-budget {
       text-align: left;
+      margin-bottom: 0;
+      margin-top: 0;
+      &-second {
+        margin-top: auto;
+        margin-bottom: 4px;
+      }
     }
-    &-budget_second {
-      text-align: left;
+    &-scroll {
+      display: none;
+    }
+    &-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      &-btn {
+        padding: 7px 10px 7px 10px;
+        border: none;
+        background-color: transparent;
+        &-arrow {
+          fill: $black;
+        }
+      }
+      &-page {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-link {
+          color: $black;
+          text-align: center;
+          font-variant-numeric: lining-nums proportional-nums;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.25;
+        }
+        &-pages {
+          color: $black;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.25;
+        }
+      }
     }
   }
 }

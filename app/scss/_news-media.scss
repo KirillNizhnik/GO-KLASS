@@ -58,9 +58,13 @@
           position: unset;
           &-img {
             margin: 0;
+            display: block;
             position: unset;
             height: 252px;
+            width: 344px;   
+            object-fit: contain;         
           }
+          
           &-descr {
             height: 252px;
             display: flex;
@@ -70,6 +74,9 @@
               width: 336px;
               text-align: left;
               margin-bottom: 16px;
+            }
+            &-mob {
+              display: none;
             }
             &-info {
               height: 124px;
@@ -138,6 +145,7 @@
             &-down {
               gap: 308px;
               &-date {
+                font-weight: 500;
               }
               &-link {
               }

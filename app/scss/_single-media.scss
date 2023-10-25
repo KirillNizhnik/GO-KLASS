@@ -125,6 +125,7 @@
       margin-bottom: 0;
       &-main img {
         width: 752px;
+        object-fit: contain;
       }
       &-fotos {
         gap: 24px;
@@ -133,6 +134,7 @@
         &-foto img {
           width: 170px;
           height: 120px;
+          object-fit: contain;
         }
       }
       

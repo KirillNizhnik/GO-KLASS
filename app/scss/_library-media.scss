@@ -1,10 +1,6 @@
 @media screen and (min-width: 768px) {
-    .container {
-      width: 768px;
-      padding: 0 32px;
-    }
-    .library{
-        margin: 40px auto 72px auto;
+       .library{
+       padding: 40px 0 72px 0;
     
         &_title {
           text-align: left;
@@ -13,30 +9,45 @@
         &_list {
            display: flex;
            flex-direction: row;
-           
-        } 
-        &_list_item {
+           gap: 8px;
+           &-item {
             display: inline-block;
             list-style: none;
             margin-bottom: 0;
-        }
-        &_list-item__color.current{
-            margin-right: 0;
-        }
+            &__btn {
+                width: 170px;
+
+            }
+           }
+           
+        } 
+        
         &_item {
-            width: 400px;
-            flex-shrink: 0;
-            display: flex;            
+            display: flex;     
+            width: calc((100% - 1 * 16px) / 2); 
+            &-pagination {
+                display: none;
+            }      
         }
         &_item:hover,
         &_item:focus {
             outline: 2px solid #2031CB;
         }
+        &_wrapper {
+            margin-bottom: 32px;
+        }
         &_grid-wrapper {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 32px;
-            margin-top: 55px;
+            display: flex;
+            gap: 32px 16px;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        &_img {
+            width: 74px;
+            height: 62px;
+        }
+        &_text {
+            margin-bottom: 0;
         }
     }
   }
