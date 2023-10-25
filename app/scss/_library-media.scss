@@ -1,107 +1,141 @@
 @media screen and (min-width: 768px) {
-       .library{
-       padding: 40px 0 72px 0;
-    
-        &_title {
-          text-align: left;
-    
-        }
-        &_list {
-           display: flex;
-           flex-direction: row;
-           gap: 8px;
-           &-item {
-            display: inline-block;
-            list-style: none;
-            margin-bottom: 0;
-            &__btn {
-                width: 170px;
+  .library {
+    padding: 40px 0 72px 0;
 
-            }
-           }
-           
-        } 
-        
-        &_item {
-            display: flex;     
-            width: calc((100% - 1 * 16px) / 2); 
-            &-pagination {
-                display: none;
-            }      
+    &_title {
+      text-align: left;
+    }
+    &_list {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      &-item {
+        display: inline-block;
+        list-style: none;
+        margin-bottom: 0;
+        &__btn {
+          width: 170px;
         }
-        &_item:hover,
-        &_item:focus {
-            outline: 2px solid #2031CB;
-        }
-        &_wrapper {
-            margin-bottom: 32px;
-        }
-        &_grid-wrapper {
-            display: flex;
-            gap: 32px 16px;
-            flex-wrap: wrap;
-            flex-direction: row;
-        }
-        &_img {
-            width: 74px;
-            height: 62px;
-        }
-        &_text {
-            margin-bottom: 0;
-        }
+      }
+    }
+
+    &_item {
+      display: flex;
+      width: calc((100% - 1 * 16px) / 2);
+      &-pagination {
+        display: none;
+      }
+    }
+    &_wrapper {
+      margin-bottom: 32px;
+    }
+    &_grid-wrapper {
+      display: flex;
+      gap: 32px 16px;
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    &_img {
+      width: 74px;
+      height: 62px;
+    }
+    &_text {
+      margin-bottom: 0;
     }
   }
-    
-    
-  @media screen and (min-width: 1240px) {
-    .container {
-      width: 1240px;
-      padding: 0 50px;
-    }
-  
-    .library{
-        margin: 64px auto 112px auto;
-        &_title {
-           text-align: left;
-    
-        }
-        &_list {
-            display: flex;
-            flex-direction: row;
-            gap:60px;
-        } 
-       
-        &_list-svg{
-            display: block;
-        }
-        &_item {
-            display: flex;
-            width: 558px;
-            height: 164px;
-            flex-shrink: 0;
-            
-        }
-        &_item:hover,
-        &_item:focus {
-            outline: 2px solid #2031CB;
-        }
-        
-        &_img {
-            width: 267px;
-            height: 164px;
-            flex-shrink: 0;
-        }
-        &_grid-wrapper {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 60px;
-            margin-top: 55px;
-          
-        }
-        &_text {
-            margin-bottom: 65px;
-        }
-    
-    }
 }
 
+@media screen and (min-width: 1240px) {
+  .library {
+    padding: 56px 0 112px 0;
+    &_title {
+      text-align: left;
+      font-size: 40px;
+      line-height: 1.2;
+      margin-bottom: 36px;
+    }
+    &_list {
+      display: flex;
+      flex-direction: row;
+      gap: 42px;
+      &-item {
+        width: 180px;
+        &__btn {
+          line-height: 1.25;
+          width: 180px;
+        }
+      }
+    }
+
+    &_list-svg {
+      display: block;
+    }
+    &_item {
+      display: flex;
+      width: 558px;
+      height: 164px;
+      position: relative;
+      &-text {
+        gap: 24px;
+      }
+    }
+
+    &_img {
+      width: 267px;
+      height: 164px;
+      flex-shrink: 0;
+    }
+    &_wrapper {
+      margin-top: 68px;
+      margin-bottom: 73px;
+    }
+    &_text {
+      font-size: 18px;
+      line-height: 1.33;
+    }
+    &_subtext {
+      position: absolute;
+      bottom: 2px;
+      right: 88px;
+    }
+    &-scroll {
+      display: none;
+    }
+    &-nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      &-btn {
+        padding: 7px 10px 7px 10px;
+        border: none;
+        background-color: transparent;
+        &-arrow {
+          fill: $black;
+        }
+      }
+      &-page {
+        width: 32px;
+        height: 32px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-link {
+          color: $black;
+          text-align: center;
+          font-variant-numeric: lining-nums proportional-nums;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.25;
+        }
+        &-pages {
+          color: $black;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 1.25;
+        }
+      }
+    }
+  }
+}
