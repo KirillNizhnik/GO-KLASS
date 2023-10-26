@@ -26,10 +26,12 @@
       &-bcg {
         top: 70px;
       }
+      &-picture {
       &-img {
         width: 344px;
         height: 240px;
       }
+    }
     }
 
     &__descrioptionText {
@@ -112,10 +114,12 @@
           left: -20px;
         }
       }
+      &-picture {
       &-img {
         width: 558px;
         height: 280px;
       }
+    }
     }
     &__descrioptionText {
       font-size: 18px;

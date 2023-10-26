@@ -43,6 +43,9 @@
       margin-bottom: 0;
     }
   }
+  .library_item-disabled {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1240px) {
@@ -137,5 +140,8 @@
         }
       }
     }
+  }
+  .library_item-disabled {
+    display: unset;
   }
 }
