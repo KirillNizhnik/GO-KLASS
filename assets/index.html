@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Клас</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="body">
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="" class="">
+                <img src="images/logo_klas.svg" alt="" class="header-inner__link-logo">
+            </a>
+            <ul class="header-inner__list">
+                <li class="header-inner__list-item"><a href="">Головна</a></li>
+                <li class="header-inner__list-item"><a href="">Хто ми</a></li>
+                <li class="header-inner__list-item"><a href="">Наші проєкти</a></li>
+                <li class="header-inner__list-item"><a href="">Новини</a></li>
+                <li class="header-inner__list-item"><a href="">Бібліотека</a></li>
+                <li class="header-inner__list-item"><a href="">Контакти</a></li>
+            </ul>
+            <button class="header-inner__btn-burger js-open-menu" data-modal-open="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 31 32" fill="none">
+                    <path d="M3.875 8.00195H27.125M3.875 16.002H27.125M3.875 24.002H27.125" stroke="#070707"
+                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="header-inner__btn-close-menu js-open-menu" data-modal-close="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                    <path d="M1.729 14.9911L8.50121 8.00043L15.2734 14.9911M15.2734 1.00977L8.49992 8.00043L1.729 1.00977" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="header-inner__btn">
+                Підтримати нас
+            </button>
+        </div>
+    </div>
+
+</header>
+<div class="mobile-menu js-menu-container is-hidden" data-modal="">
+
+    <div class="mobile-menu-container">
+        <ul class="mobile-menu__list list ">
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Хто ми</a>
+            </li>
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Наші проєкти</a>
+            </li>
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Новини</a>
+            </li>
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Бібліотека</a>
+            </li>
+        </ul>
+        <button class="mobile-menu__btn">
+            Підтримати нас
+        </button>
+    </div>
+</div>
+<main>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-inner">
+                <div class="hero-inner__caption">Громадська організація</div>
+                <h1 class="hero-inner__title">«Всеукраїнська організація "Клас"»</h1>
+                <a class="hero-inner__btn button" href="">Підтримати нас</a>
+                <ul class="hero-inner__list">
+                    <li class="hero-inner__list-item hero-inner__list-item-1">
+                        <img src="images/hero-1.jpg" alt=""
+                             class="hero-inner__list-item-img">
+                    </li>
+                    <li class="hero-inner__list-item hero-inner__list-item-2">
+                        <img src="images/hero-2.jpg" alt=""
+                             class="hero-inner__list-item-img">
+                    </li>
+                    <li class="hero-inner__list-item hero-inner__list-item-3">
+                        <img src="images/hero-3.jpg" alt=""
+                             class="hero-inner__list-item-img hero-inner__list-item-img-3">
+                    </li>
+                    <li class="hero-inner__list-item hero-inner__list-item-4">
+                        <img src="images/hero-4.jpg" alt=""
+                             class="hero-inner__list-item-img">
+                    </li>
+                    <li class="hero-inner__list-item hero-inner__list-item-5">
+                        <img src="images/hero-5.jpg" alt=""
+                             class="hero-inner__list-item-img">
+                    </li>
+                </ul>
+
+                <ul class="hero-inner__list-benefits">
+                    <li class="hero-inner__list-benefits-item">
+                        <div class="hero-inner__list-benefits-item-num benefits-item-num-1">40</div>
+                        <span>виконаних проєктів</span></li>
+                    <li class="hero-inner__list-benefits-item">
+                        <div class="hero-inner__list-benefits-item-num benefits-item-num-2">8</div>
+                        <span>проєктів в роботі</span></li>
+                    <li class="hero-inner__list-benefits-item">
+                        <div class="hero-inner__list-benefits-item-num benefits-item-num-3">
+                            <svg class="hero-inner-benefits-icon" width="38px" height="34px">
+                                <use href="images/icons.svg#icon-infinity"></use>
+                            </svg>
+                        </div>
+                        <span>бажання допомагати </span></li>
+                </ul>
+                <p class="hero-inner__descr">Налагодимо порозуміння між дітьми та батьками, подаруємо кожній дитині
+                    гармонійне середовище</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="about-us">
+        <div class="container">
+            <div class="about-us-inner">
+                <h2 class="about-us-inner__title">Хто ми</h2>
+                <img src="images/about-us-img.jpg" alt="" class="about-us-inner__img">
+                <p class="about-us-inner__descr">
+                    Вже понад 25 років наша організація допомагає дітям та молоді, які опинились у складних життєвих
+                    обставинах, надає психологічну підтримку, соціальний супровід та кар’єрне консультування.<br>
+                    <br>
+                    Ми реалізували багато проектів, провели безліч корисних, освітніх тренингів та відкрили декілька
+                    важливих для суспільства установ.<br>
+                    <br>
+                    Зараз наша команда активно надає гуманітарну та психосоціальну допомогу людям, що постраждали від
+                    воєнного
+                    конфлікту в Україні, ми створюємо безпечні умови для евакуйованих дітей, молоді та сімей з дітьми.
+                </p>
+                <a href="" class="about-us-inner__btn">
+                    Читати більше
+                    <svg class="about-us-inner-icon" width="24px" height="24px">
+                        <use class="about-us-inner-icon-use" href="images/icons.svg#icon-arrow_down"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="directions-work">
+        <div class="container">
+            <div class="directions-work-inner">
+                <h2 class="directions-work-inner__title">Напрямки роботи</h2>
+                <div class="directions-work-inner__list ">
+                    <div class="directions-work-inner__list-item">
+                        <div class="directions-work-inner-title">
+                            <svg class="directions-work-inner-icon" width="8px" height="56px">
+                                <use class="directions-work-inner-icon-use" href="images/icons.svg#icon-line-1"></use>
+                            </svg>
+                            <h3 class="directions-work-inner__list-item-title">
+                                Заходи для дітей та молоді
+                            </h3>
+                        </div>
+                        <p class="directions-work-inner__list-item-descr">
+                            Створення сприятливого середовища для навчання та розвитку, надання педагогічної,
+                            психологічної та соціальної підтримки <br>
+                            <br>
+                            Розвиток життєвих та соціальних навичок, а також вмінь встановлювати здорові відносини і
+                            мирно вирішувати конфлікти <br>
+                            <br>
+                            Заохочення активного, безпечного і здорового способу життя <br>
+                            <br>
+                            Сприяння включенню та інтеграція дітей та підлітків у соціум
+                        </p>
+
+                    </div>
+                    <div class="directions-work-inner__list-column">
+                        <div class="directions-work-inner__list-item">
+                            <div class="directions-work-inner-title">
+                                <svg class="directions-work-inner-icon" width="8px" height="56px">
+                                    <use class="directions-work-inner-icon-use"
+                                         href="images/icons.svg#icon-line-2"></use>
+                                </svg>
+                                <h3 class="directions-work-inner__list-item-title">
+                                    Заходи для сімей
+                                </h3>
+                            </div>
+                            <p class="directions-work-inner__list-item-descr">
+                                Зміцнення компетенцій сімей<br>
+                                <br>
+                                Сприяння навчанню сімей і здатності до виховання дітей
+                            </p>
+                        </div>
+                        <div class="directions-work-inner__list-item">
+                            <div class="directions-work-inner-title">
+                                <svg class="directions-work-inner-icon" width="8px" height="56px">
+                                    <use class="directions-work-inner-icon-use"
+                                         href="images/icons.svg#icon-line-3"></use>
+                                </svg>
+                                <h3 class="directions-work-inner__list-item-title">
+                                    Підвищення нашої якості роботи
+                                </h3>
+                            </div>
+                            <p class="directions-work-inner__list-item-descr">
+                                Професійний розвиток співробітників<br>
+                                <br>
+                                Створення середовища для розкриття потенціалу глобальності і позитивності мислення
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container">
+            <div class="news__inner">
+                <h2 class="news__inner-title">Новини <a href=""
+                                                        class="news__inner-btn-top about-us-inner__btn news__inner-item-bottom-btn">
+                    Усі новини
+                    <svg class="about-us-inner-icon" width="24px" height="24px">
+                        <use class="about-us-inner-icon-use" href="images/icons.svg#icon-arrow_down"></use>
+                    </svg>
+                </a></h2>
+                <ul class="news__inner-list">
+                    <li class="news__inner-list-item">
+                        <img class="news__inner-list-item-img" src="images/news-img-1.jpg" alt="">
+
+
+                        <h3 class="news__inner-list-item-title">Ігротека для дітей з інвалідністю та робота з
+                            батьками</h3>
+                        <p class="news__inner-list-item-descr">Від початку повномасштабного вторгнення компанія “Имя” надала допомогу на суму... </p>
+
+                        <div class="news__inner-item-bottom">
+                            <div class="news__inner-item-bottom-date">24.06.23</div>
+                            <a href="" class="about-us-inner__btn news__inner-item-bottom-btn">
+                                Читати більше
+                                <svg class="about-us-inner-icon" width="24px" height="24px">
+                                    <use class="about-us-inner-icon-use" href="images/icons.svg#icon-arrow_down"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="news__inner-list-item">
+                        <img class="news__inner-list-item-img" src="images/news-img-2.jpg" alt="">
+                        <h3 class="news__inner-list-item-title">Розпочався курс «Батьківство в радість»</h3>
+                        <p class="news__inner-list-item-descr">14 червня в Пирятинській громаді відбулося перше заняття
+                            тренінгового курсу для набуття батьківських навичок "Батьківство в радість".</p>
+
+                        <div class="news__inner-item-bottom">
+                            <div class="news__inner-item-bottom-date">15.06.23</div>
+                            <a href="" class="about-us-inner__btn news__inner-item-bottom-btn">
+                                Читати більше
+                                <svg class="about-us-inner-icon" width="24px" height="24px">
+                                    <use class="about-us-inner-icon-use" href="images/icons.svg#icon-arrow_down"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="news__inner-list-item">
+                        <img class="news__inner-list-item-img" src="images/news-img-3.jpg" alt="">
+                        <h3 class="news__inner-list-item-title">ЛІТО - пора канікул, відпочинку, радості, позитивних
+                            емоцій!</h3>
+                        <p class="news__inner-list-item-descr">Працювали для дітей та з дітьми сьогодні працівники, які
+                            провели заняття з елементами TEAM UP. У відповідь учні Пирятинського ліцею №2 та діти
+                            Вишневецької школи осяяли своїми усмішками цей похмурий день.</p>
+
+                        <div class="news__inner-item-bottom">
+                            <div class="news__inner-item-bottom-date">12.06.23</div>
+                            <a href="" class="about-us-inner__btn news__inner-item-bottom-btn">
+                                Читати більше
+                                <svg class="about-us-inner-icon" width="24px" height="24px">
+                                    <use class="about-us-inner-icon-use" href="images/icons.svg#icon-arrow_down"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="" class="news__inner-btn button">Усі новини</a>
+            </div>
+        </div>
+    </section>
+    <section class="our-partners">
+        <div class="container">
+            <div class="our-partners__inner">
+                <h2 class="our-partners__inner-title">Наші партнери</h2>
+                <ul class="our-partners__inner-list scrolling-list">
+                    <li class="our-partners__inner-list-item">
+                        <img src="images/our-partners-1.png" alt="" class="our-partners__inner-list-item-img">
+                    </li>
+                    <li class="our-partners__inner-list-item">
+                        <img src="images/our-partners-2.jpg" alt="" class="our-partners__inner-list-item-img">
+                    </li>
+                    <li class="our-partners__inner-list-item">
+                        <img src="images/our-partners-3.jpg" alt="" class="our-partners__inner-list-item-img">
+                    </li>
+                    <li class="our-partners__inner-list-item">
+                        <img src="images/our-partners-4.svg" alt="" class="our-partners__inner-list-item-img">
+                    </li>
+                    <li class="our-partners__inner-list-item">
+                        <img src="images/our-partners-5.svg" alt="" class="our-partners__inner-list-item-img">
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="about-partnerships">
+        <div class="container">
+            <div class="about-partnerships__inner">
+                <h2 class="about-partnerships__inner-title">Про важливість партнерства</h2>
+                <div class="about-partnerships__inner-wrap">
+                    <img src="images/about-partnerships-img.jpg" alt="" class="about-partnerships__inner-img">
+                    <div>
+                        <p class="about-partnerships__inner-descr">Стати нашим партнером - це не тільки високоякісна
+                            благодійна ініціатива, але й шлях до справжньої зміни у житті дітей та молоді, які
+                            стикаються з
+                            труднощами. Ваша підтримка допоможе нам забезпечити дітей з малозабезпечених сімей
+                            необхідними
+                            навчальними матеріалами, канцелярськими товарами та екіпіруванням, що стане кроком до
+                            забезпечення рівних можливостей для їх освіти.<br>
+                            <br>
+                            Організація також зосереджується на підтримці дітей з особливими потребами, надаючи їм
+                            необхідні
+                            ресурси та підтримку для їх навчання та саморозвитку. Ваш внесок допоможе нам забезпечити
+                            доступ
+                            до спеціальних навчальних програм, технологій та медичного обладнання, що значно полегшить
+                            їхню
+                            освітню траєкторію та розвиток.<br>
+                            <br>
+                            Разом ми зможемо змінити майбутнє дітей та молоді, відкриваючи перед ними нові можливості та
+                            надаючи підтримку в їхньому освітньому шляху.</p>
+                        <a class="about-partnerships__inner-btn button" href="">Стати партнером</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__inner">
+                    <div class="contacts__inner">
+                        <div class="contacts__inner-right">
+                            <h2 class="contacts__inner-title">Маєте питання?</h2>
+                            <h4 class="contacts__inner-descr">Залишіть ваші контактні дані та ми з Вами зв’яжемося!</h4>
+                            <form class="contacts-form">
+                                <div class="contacts-form-wrap">
+                                    <label class="contacts-form-label" for="contacts-name">Ім’я</label>
+                                    <input type="text" name="name" placeholder="|Введіть Ім’я" required=""
+                                           class="contacts-form-input" id="contacts-name">
+                                </div>
+                                <div class="contacts-form-wrap">
+                                    <label class="contacts-form-label" for="contacts-tel">Телефон</label>
+                                    <input type="tel" name="tel" placeholder="+380|" required=""
+                                           class="contacts-form-input"
+                                           id="contacts-tel">
+                                </div>
+                                <div class="contacts-form-wrap">
+                                    <label class="contacts-form-label" for="contacts-email">E-mail</label>
+                                    <input type="email" name="email" placeholder="|Введіть E-mail" required=""
+                                           class="contacts-form-input" id="contacts-email">
+                                </div>
+                                <div class="contacts-form-wrap">
+                                    <label for="textarea"> </label>
+                                <textarea id="textarea" class="contacts-form-textarea" placeholder="|Напишіть Ваше питання"></textarea>
+                                </div>
+
+                                <div class="contacts-form-privacy-policy">
+                                    <label class="contacts-form-privacy-policy-label">
+                                        <input type="checkbox" name="user-policy" class="contacts-form-checkbox">
+
+                                        <span class="contacts-form-privacy-policy-icon"></span></label>
+                                    Я згоден(на) з політикою конфіденційності
+                                </div>
+                                <button class="contacts-form-btn" type="submit">Відправити</button>
+                            </form>
+                        </div>
+                        <div class="contacts__inner-left">
+                            <h2 class="contacts__inner-title">Контакти </h2>
+                            <h4 class="contacts__inner-descr">Громадська організація «Всеукраїнська організація
+                                "Клас"»</h4>
+                            <ul class="contacts__inner-list">
+                                <li class="contacts__inner-list-item">
+                                    <a href="" class="contacts__inner-list-item-link">
+                                        <svg class="contacts__inner-list-item-link-icon" width="24px" height="24px">
+                                            <use class="about-us-inner-icon-use"
+                                                 href="images/icons.svg#icon-gmail"></use>
+                                        </svg>
+                                        govgoklas@gmail.com
+                                    </a>
+                                </li>
+                                <li class="contacts__inner-list-item">
+                                    <a href="" class="contacts__inner-list-item-link">
+                                        <svg class="contacts__inner-list-item-link-icon" width="24px" height="24px">
+                                            <use class="about-us-inner-icon-use"
+                                                 href="images/icons.svg#icon-phone"></use>
+                                        </svg>
+                                        +38 066 596 82 47
+                                    </a>
+                                </li>
+                                <li class="contacts__inner-list-item">
+                                    <a href="" class="contacts__inner-list-item-link">
+                                        <svg class="contacts__inner-list-item-link-icon" width="24px" height="24px">
+                                            <use class="about-us-inner-icon-use"
+                                                 href="images/icons.svg#icon-whatsapp"></use>
+                                        </svg>
+                                        +38 066 596 82 47
+                                    </a>
+                                </li>
+                                <li class="contacts__inner-list-item">
+                                    <a href="" class="contacts__inner-list-item-link">
+                                        <svg class="contacts__inner-list-item-link-icon" width="24px" height="24px">
+                                            <use class="about-us-inner-icon-use"
+                                                 href="images/icons.svg#icon-facebook"></use>
+                                        </svg>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li class="contacts__inner-list-item">
+                                    <a href="" class="contacts__inner-list-item-link">
+                                        <svg class="contacts__inner-list-item-link-icon" width="24px" height="24px">
+                                            <use class="about-us-inner-icon-use"
+                                                 href="images/icons.svg#icon-youtube"></use>
+                                        </svg>
+                                        YouTube
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+</main>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Клас</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="body">
+<header class="header">
+    <div class="container">
+        <div class="header-inner">
+            <a href="" class="">
+                <img src="images/logo_klas.svg" alt="" class="header-inner__link-logo">
+            </a>
+            <ul class="header-inner__list">
+                <li class="header-inner__list-item"><a href="">Головна</a></li>
+                <li class="header-inner__list-item"><a href="">Хто ми</a></li>
+                <li class="header-inner__list-item"><a href="">Наші проєкти</a></li>
+                <li class="header-inner__list-item"><a href="">Новини</a></li>
+                <li class="header-inner__list-item"><a href="">Бібліотека</a></li>
+                <li class="header-inner__list-item"><a href="">Контакти</a></li>
+            </ul>
+            <button class="header-inner__btn-burger js-open-menu" data-modal-open="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none">
+                    <path d="M3.875 8.00195H27.125M3.875 16.002H27.125M3.875 24.002H27.125" stroke="#070707"
+                          stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="header-inner__btn-close-menu js-open-menu" data-modal-close="">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none">
+                    <path d="M1.729 14.9911L8.50121 8.00043L15.2734 14.9911M15.2734 1.00977L8.49992 8.00043L1.729 1.00977" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+            <button class="header-inner__btn">
+                Підтримати нас
+            </button>
+        </div>
+    </div>
+</header>
+<div class="mobile-menu js-menu-container is-hidden" data-modal="">
+
+    <div class="mobile-menu-container">
+        <ul class="mobile-menu__list list ">
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Хто ми</a>
+            </li>
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Наші проєкти</a>
+            </li>
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Новини</a>
+            </li>
+            <li class="mobile-menu__item ">
+                <a class="mobile-menu__item-link link " href="">Бібліотека</a>
+            </li>
+        </ul>
+        <button class="mobile-menu__btn">
+            Підтримати нас
+        </button>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

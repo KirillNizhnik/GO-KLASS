@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard-polyfill/2.8.6/clipboard-polyfill.js"></script>
+    <title>Підтримати нас</title>
+  </head>
+  <body>
+    <section class="donation">
+      <div class="container">
+        <h2 class="donation__main-title">Підтримати нас</h2>
+      </div>
+      <div class="donation__qrWrap">
+        <div class="container">
+          <div class="donation__qrText">
+            <h3 class="donation__qrText-title">QR-код для донату</h3>
+            <p class="donation__qrText-text">
+              Використовуйте <a href="#">Privat<span>24</span></a>
+            </p>
+            <div class="donation__qrCode">
+              <object
+                data="./images/qr-code.svg"
+                width="250"
+                height="250"
+              ></object>
+            </div>
+            <button class="donation__btn" type="button">Зробити внесок</button>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="donation__description">
+          <img
+            class="donation__description-bcg"
+            src="./images/donation-descr-fon1.png"
+            alt=""
+            width="83"
+            height="69"
+          />
+          <img
+            class="donation__description-bcg-desc"
+            src="./images/donation-descr-fon.png"
+            alt=""
+            width="83"
+            height="69"
+          />
+          <picture class="donation__description-picture">
+            <source
+              media="(max-width: 767px)"
+              srcset="./images/donation-descr-photo.jpg"
+            />
+            <source
+              media="(min-width: 768px) and (max-width: 1239px)"
+              srcset="./images/donation-boy-tablet.jpg"
+            />
+            <img
+              class="donation__description-picture-img"
+              src="./images/donation-descr-photo.jpg"
+              alt="Хлопчик зі стягом"
+            />
+          </picture>
+          <p class="donation__descrioptionText">
+            Коли Ви підтримуєте Громадську організацію "Всеукраїнська
+            організація "КЛАС" Ви допомагаєте створювати безпечні умови для
+            дітей з інвалідністю, дітей сиріт та дітей, позбавлених
+            батьківського піклування, прийомних сімей, дитячих будинків
+            сімейного типу, багатодітних сімей, молоді, вкладаєте в розвиток та
+            формування цінності молодого покоління, а значить в своє майбутнє.
+          </p>
+        </div>
+        <h2 class="donation__title">Переказ за банківськими реквізитами</h2>
+      </div>
+      <div class="donation__details">
+        <div class="container donation__details-container">
+          <ul class="donation__details-list">
+            <li class="donation__details-list-item">
+              <h3 class="donation__detailsField">Повна назва:</h3>
+              <p class="donation__detailsFieldName">
+                Громадська організація «Всеукраїнська організація "Клас"»
+              </p>
+            </li>
+            <li class="donation__details-list-item">
+              <h3 class="donation__detailsField">Юридична адреса:</h3>
+              <p class="donation__detailsFieldName">
+                Україна, м. Київ, вул. Антоновича, б.15, офіс 6
+              </p>
+            </li>
+            <li class="donation__details-list-item">
+              <h3 class="donation__detailsField">Код ЄДРПОУ:</h3>
+              <p class="donation__detailsFieldName">25365553</p>
+            </li>
+            <li id="account" class="donation__details-list-item">
+              <h3 class="donation__detailsField">Поточний рахунок:</h3>
+              <p id="account-number" class="donation__detailsFieldName">
+                UAXXXXXXXXXXXXXXX
+              </p>
+
+              <img
+                class="donation-copy-icon"
+                src="./images/donation-copy-icon.svg"
+                alt=""
+              />
+            </li>
+            <li class="donation__details-list-item">
+              <h3 class="donation__detailsField">Назва банку:</h3>
+              <p class="donation__detailsFieldName">
+                XXXXXXXXXXXXXXXXXXXXXXXXXXX
+              </p>
+            </li>
+            <li class="donation__details-list-item">
+              <h3 class="donation__detailsField">МФО банку:</h3>
+              <p class="donation__detailsFieldName">
+                XXXXXXXXXXXXXXXXXXXXXXXXXXX
+              </p>
+            </li>
+            <li class="donation__details-list-item">
+              <h3 class="donation__detailsField">Система оподаткування:</h3>
+              <p class="donation__detailsFieldName">
+                XXXXXXXXXXXXXXXXXXXXXXXXXXX
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.getElementById("account").onclick = function () {
+        let text = document.getElementById("account-number").innerText;
+        clipboard.writeText(text);
+        console.log("text :>> ", text);
+      };
+    </script>
+  </body>
+</html>
