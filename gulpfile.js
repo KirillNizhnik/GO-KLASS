@@ -81,7 +81,7 @@ gulp.task('watch', function () {
     gulp.watch('app/js/*.js', gulp.series('script'));
 });
 
-gulp.task('build', gulp.series('clean', 'export'));
+gulp.task('build', gulp.series('export'));
 
 gulp.task(
     'default',
