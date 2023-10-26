@@ -6,6 +6,7 @@
     line-height: 1.13;
     margin-bottom: 22px;
     text-align: center;
+    font-family: "Raleway", sans-serif;
   }
   &__qrWrap {
     padding: 40px 0;
@@ -19,6 +20,7 @@
       line-height: 1.13;
       margin-bottom: 12px;
       text-align: center;
+      font-family: "Raleway", sans-serif;
     }
     &-text {
       font-size: 16px;
@@ -26,14 +28,17 @@
       line-height: 1.4;
       text-align: center;
       margin-bottom: 32px;
+      font-family: "Raleway", sans-serif;
       a {
         color: $violet;
         text-decoration: none;
         font-variant-numeric: lining-nums proportional-nums;
+        font-family: "Raleway", sans-serif;
       }
 
       span {
         font-size: larger;
+        font-family: "Raleway", sans-serif;
       }
     }
   }
@@ -48,6 +53,7 @@
     line-height: 1.13;
     text-align: center;
     margin-bottom: 24px;
+    font-family: "Raleway", sans-serif;
   }
 
   &__btn {
@@ -86,8 +92,12 @@
         display: none;
       }
     }
-    &-img {
-      border-radius: 4px;
+    &-picture {
+      &-img {
+        border-radius: 4px;
+        object-fit: contain;
+        height: 173px;
+      }
     }
   }
   &__descrioptionText {
@@ -95,6 +105,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    font-family: "Raleway", sans-serif;
   }
 
   &__details {
@@ -115,6 +126,7 @@
     margin-bottom: 8px;
     font-size: 16px;
     line-height: 1.4;
+    font-family: "Raleway", sans-serif;
   }
 
   &__detailsFieldName {
@@ -122,6 +134,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;
+    font-family: "Raleway", sans-serif;
   }
   &-copy-icon {
     display: block;

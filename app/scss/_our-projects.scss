@@ -1,106 +1,231 @@
 .our_project {
+  padding-top: 40px;
+  padding-bottom: 80px;
   &-title {
     color: $black;
     font-size: 30px;
     font-family: "Raleway";
     font-weight: 700;
-    line-height: 48px;
+    line-height: 1.13;
     word-wrap: break-word;
-    margin-bottom: 50px;
+    margin-bottom: 24px;
     text-align: center;
   }
   &-list {
-    text-align: center;
-  }
-  &-list-item {
-    font-family: "Raleway";
-    color: $black;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 20px;
-    cursor: pointer;
+    display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  &-list-item.current {
-    border-bottom: 5px solid $yellow;
-    border-radius: 5px;
-  }
-  &-list-item:hover,
-  &-list-item:focus {
-    border-bottom: 5px solid $yellow;
-    border-radius: 5px;
+    text-align: center;
+    gap: 16px;
+    margin-bottom: 36px;
+    &-item {
+      &-btn {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        font-family: "Raleway", sans-serif;
+        color: $black;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.5;
+        cursor: pointer;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        cursor: pointer;
+      }
+      &-current {
+        &-btn {
+          font-weight: 600;
+          line-height: 1.4;
+        }
+      }
+      &-current::after {
+        content: "";
+        display: block;
+        width: 100%;
+        border: 3px solid $yellow;
+        border-radius: 5px;
+      }
+    }
   }
   &-wrapper {
     text-align: center;
-    gap: 24px;
+    margin-bottom: 24px;
   }
-
+  &-main {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
   &-headline {
     text-align: center;
     color: $black;
     font-size: 18px;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     font-weight: 600;
-    line-height: 24px;
+    line-height: 1.33;
     margin-bottom: 24px;
-    cursor: pointer;
-  }
-  &-content {
-    margin-bottom: 32px;
+    font-variant-numeric: lining-nums proportional-nums;
   }
   &-img {
     width: 343px;
     height: 206px;
+    max-width: 100%;
   }
 
   &-dates {
     display: flex;
-    margin-bottom: 36px;
+    margin-bottom: 16px;
     justify-content: space-between;
     margin-top: 10px;
+    align-items: center;
+    font-variant-numeric: lining-nums proportional-nums;
   }
-  &-text_list_item {
-    display: none;
+  &-status {
+    border-radius: 4px;
+    border: 1px solid #8fcecb;
+    padding: 8px 16px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Raleway", sans-serif;
+  }
+  &-period {
+    font-family: "Raleway", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.33;
+    font-variant-numeric: lining-nums proportional-nums;
+  }
+  &-text_list_item::marker {
+    font-variant-numeric: lining-nums proportional-nums;
+    font-size: 16px;
   }
   &-text {
-    width: 343px;
-    height: 121px;
     color: $black;
     font-size: 16px;
-    font-family: "Raleway";
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
+    font-variant-numeric: lining-nums proportional-nums;
     word-wrap: break-word;
-    text-align: justify;
+    text-align: left;
+  }
+  &-text_title {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+    font-variant-numeric: lining-nums proportional-nums;
   }
   &-text_list {
     text-align: left;
-    font-size: 18px;
-    font-family: "Raleway";
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
-    line-height: 24px;
+    line-height: 1.5;
     word-wrap: break-word;
     list-style-type: decimal;
+    padding-left: 28px;
+    font-variant-numeric: lining-nums proportional-nums;
+    height: 221px;    
+    overflow: hidden;
   }
-  &-svg-container {
+  &-btn {
     display: flex;
-    flex-flow: row-reverse;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: start;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 140px;
+    font-size: 16px;
+    line-height: 1.25;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
   }
-
+  &-btn:hover .our_project-link-icon {
+    transform: rotate(315deg);
+    fill: $violet;
+  }
+  &-btn:hover {
+    font-weight: 600;
+    color: $violet;
+  }
+  &-close-btn {    
+    display: none;
+    border: none;
+    background-color: transparent;
+    padding: none;    
+    align-items: center;
+    color: $black;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.25;
+    cursor: pointer;
+      &-icon {
+      stroke: $black;
+    }
+  }
   &-budget {
     text-align: left;
-    margin-left: 24px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Raleway;
+    font-size: 16px;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-left: 27px;
+    position: relative;
+    margin-top: 22px;
   }
-  &-budget_second {
-    margin-bottom: 32px;
-    text-align: left;
-    margin-left: 24px;
+  &-budget::before {
+    content: "";
+    width: 30px;
+    height: 8px;
+    transform: rotate(90deg);
+    background-color: $yellow;
+    display: block;
+    position: absolute;
+    border-radius: 30px;
+    left: -11px;
+    top: 7px;
   }
+  &-scroll {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+    &-arrow {
+      stroke: $grey-dark;
+    }
+    &-page {
+      height: 1px;
+      width: 29px;
+      background-color: $grey-dark;
+    }
+  }
+  &-nav {
+    display: none;
+  }
+}
+
+.active-arrow {
+  stroke: $black;
+}
+.active-page {
+  background-color: $black;
+  height: 2px;
 }

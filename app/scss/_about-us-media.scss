@@ -21,7 +21,7 @@
             width: 336px;
             height: 276px;
             margin-bottom: 0;
-                      }          
+          }
         }
 
         &-container {
@@ -110,6 +110,7 @@
       display: flex;
       flex-wrap: wrap;
       gap: 112px;
+      
       &__first {
         position: relative;
         z-index: 1;
@@ -124,7 +125,7 @@
           display: block;
           position: absolute;
           z-index: -10;
-          bottom: 14px;
+          bottom: -20px;
           left: -42px;
         }
         &-bg-desc-r {
@@ -139,11 +140,11 @@
         }
         &-picture {
           width: unset;
-
+          margin-bottom: 0;
           &-img {
             margin-bottom: 0;
             width: 558px;
-            height: 336px;
+            height: 348px;
           }
           &-first {
             height: unset;
@@ -239,6 +240,7 @@
       gap: 16px;
       flex-wrap: wrap;
       row-gap: 35px;
+      margin-bottom: 0;
       &__item {
         width: calc((100% - 16px * 3) / 4);
         &-img {
@@ -258,5 +260,8 @@
     &-scroll {
       display: none;
     }
+  }
+  .about-list__item-first {
+    margin-bottom: 0;
   }
 }

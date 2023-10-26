@@ -63,26 +63,28 @@
       flex-wrap: wrap;
       gap: 32px;
       margin-bottom: 32px;
-      &-item {      
-        position: relative;  
+      &-item {
+        position: relative;
         &-img {
-          position: absolute;
-          z-index: 0;
-          z-index: 2;
-          height: 206px;
-          width: 343px;
-          border-radius: 4px;
-          margin-bottom: 16px;
-          bottom: 326px;
-          max-width: 100%;
+          display: none;
         }
+        
         &-descr {
           &-title {
             font-size: 18px;
             font-weight: 600;
             line-height: 1.33;
-            margin-bottom: 246px;
+            margin-bottom: 24px;
             text-align: center;
+          }
+          &-mob {
+            height: 206px;
+            width: 343px;
+            border-radius: 4px;
+            margin-bottom: 16px;
+            bottom: 326px;
+            max-width: 100%;
+            object-fit: contain;
           }
           &-info {
             height: 238px;
@@ -96,7 +98,6 @@
               font-weight: 400;
               line-height: 1.5;
               text-overflow: ellipsis;
-              
             }
           }
           &-down {
